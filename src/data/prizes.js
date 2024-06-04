@@ -5,7 +5,7 @@ export const prizes = [
         allow: true,
         title: 'Gorro de Flores',
         code: 'UNGORR3IT8',
-        image: '/assets/images/prizes/gorro-flores.png',
+        image: '/images/prizes/gorro-flores.png',
         description: `Este gorro es muy colorido y cuenta con un efecto que saca arcoiris a los lados. Una pieza muy útil en los desfiles, sobre todo los coloridos y exéntricos.`,
         tags: ['ropa', 'cabeza', 'gorros', 'coloridos']
     },
@@ -15,7 +15,7 @@ export const prizes = [
         allow: true,
         title: 'Bicicleta Celeste',
         code: 'UNBI3L21TA',
-        image: '/assets/images/prizes/bicicleta-celeste.png',
+        image: '/images/prizes/bicicleta-celeste.png',
         description: '',
         tags: ['transportes', 'bicicletas']
     },
@@ -25,7 +25,7 @@ export const prizes = [
         allow: true,
         title: 'Comoda Navideña Azul',
         code: 'UNR3G0LAD1',
-        image: '/assets/images/prizes/comoda-navidena-azul.png',
+        image: '/images/prizes/comoda-navidena-azul.png',
         description: '',
         tags: ['muebles', 'navidad']
     },
@@ -35,7 +35,7 @@ export const prizes = [
         allow: true,
         title: 'Corona Navideña Azul',
         code: 'UNREF4Y37L',
-        image: '/assets/images/prizes/corona-navidena-azul.png',
+        image: '/images/prizes/corona-navidena-azul.png',
         description: '',
         tags: ['muebles', 'decoración', 'decoracion', 'navidad']
     },
@@ -45,7 +45,7 @@ export const prizes = [
         allow: true,
         title: 'Mascara de Calavera color Rosa',
         code: 'UNSQU3L3TM',
-        image: '/assets/images/prizes/mascara-calavera-rosa.png',
+        image: '/images/prizes/mascara-calavera-rosa.png',
         description: '',
         tags: ['ropa', 'cabeza', 'accesorios', 'mascaras', 'halloween']
     },
@@ -55,7 +55,7 @@ export const prizes = [
         allow: true,
         title: 'Mascara de Calavera color Verde',
         code: 'UNSQU3L3TV',
-        image: '/assets/images/prizes/mascara-calavera-verde.png',
+        image: '/images/prizes/mascara-calavera-verde.png',
         description: '',
         tags: ['ropa', 'cabeza', 'accesorios', 'mascaras', 'halloween']
     },
@@ -65,7 +65,7 @@ export const prizes = [
         allow: true,
         title: 'Moto Mapache',
         code: 'UNTRIC3OL1',
-        image: '/assets/images/prizes/moto-mapache.png',
+        image: '/images/prizes/moto-mapache.png',
         description: '',
         tags: ['transportes', 'motos']
     },
@@ -75,7 +75,7 @@ export const prizes = [
         allow: true,
         title: 'Pantalón Naranja y Morado',
         code: 'UNP4ANT2LN',
-        image: '/assets/images/prizes/pantalon-naranja-morado.png',
+        image: '/images/prizes/pantalon-naranja-morado.png',
         description: '',
         tags: ['ropa', 'pantalones', 'coloridos']
     },
@@ -85,7 +85,7 @@ export const prizes = [
         allow: true,
         title: 'Polo Morado con Flores',
         code: 'UNR3M5RAP1',
-        image: '/assets/images/prizes/polo-morado-flores.png',
+        image: '/images/prizes/polo-morado-flores.png',
         tags: ['ropa', 'polos', 'coloridos']
     },
     {
@@ -94,7 +94,7 @@ export const prizes = [
         allow: true,
         title: 'Puesto Salvavidas Rojo',
         code: 'UNSI3LP4G8',
-        image: '/assets/images/prizes/puesto-salvavidas-rojo.png',
+        image: '/images/prizes/puesto-salvavidas-rojo.png',
         description: '',
         tags: ['muebles', 'decoración', 'decoracion', 'verano', 'playa']
     },
@@ -104,7 +104,7 @@ export const prizes = [
         allow: true,
         title: 'Gorro con Punta',
         code: 'UNC45C9N3G',
-        image: '/assets/images/prizes/gorro-punta.png',
+        image: '/images/prizes/gorro-punta.png',
         description: '',
         tags: ['ropa', 'cabeza', 'gorros']
     },
@@ -114,7 +114,7 @@ export const prizes = [
         allow: true,
         title: 'Tractor Futurista',
         code: 'UNT3ACT93T',
-        image: '/assets/images/prizes/tractor-futurista.png',
+        image: '/images/prizes/tractor-futurista.png',
         description: '',
         tags: ['transportes', 'futurista']
     },
@@ -124,7 +124,7 @@ export const prizes = [
         allow: true,
         title: 'Traje de Cactus',
         code: 'UN34RGALO7',
-        image: '/assets/images/prizes/traje-cactus.png',
+        image: '/images/prizes/traje-cactus.png',
         description: '',
         tags: ['ropa', 'disfraces']
     },
@@ -134,7 +134,7 @@ export const prizes = [
         allow: true,
         title: 'Traje de Esqueleto',
         code: 'UNESQU3LE2',
-        image: '/assets/images/prizes/traje-esqueleto.png',
+        image: '/images/prizes/traje-esqueleto.png',
         description: '',
         tags: ['ropa', 'disfraces', 'halloween']
     },
@@ -144,7 +144,7 @@ export const prizes = [
         allow: true,
         title: 'Traje de Fantasma',
         code: 'UNDISF1NTA',
-        image: '/assets/images/prizes/traje-fantasma.png',
+        image: '/images/prizes/traje-fantasma.png',
         description: '',
         tags: ['ropa', 'disfraces', 'halloween']
     },
@@ -154,7 +154,7 @@ export const prizes = [
         allow: true,
         title: 'Traje de Frankestein',
         code: 'UNDIZF4KES1',
-        image: '/assets/images/prizes/traje-frankestein.png',
+        image: '/images/prizes/traje-frankestein.png',
         description: '',
         tags: ['ropa', 'disfraces', 'halloween']
     },
@@ -164,7 +164,7 @@ export const prizes = [
         allow: true,
         title: 'Traje de Granja Dorado',
         code: 'UNT3JADOR1',
-        image: '/assets/images/prizes/traje-granja-dorado.png',
+        image: '/images/prizes/traje-granja-dorado.png',
         description: '',
         tags: ['ropa', 'disfraces', 'granja']
     },
@@ -174,7 +174,7 @@ export const prizes = [
         allow: true,
         title: 'Traje de Granja Plateado',
         code: 'UNTR3K8PLA',
-        image: '/assets/images/prizes/traje-granja-plateado.png',
+        image: '/images/prizes/traje-granja-plateado.png',
         description: '',
         tags: ['ropa', 'disfraces', 'granja']
     },
@@ -184,7 +184,7 @@ export const prizes = [
         allow: true,
         title: 'Traje de Momia',
         code: 'UND1ZM9M3A',
-        image: '/assets/images/prizes/traje-momia.png',
+        image: '/images/prizes/traje-momia.png',
         description: '',
         tags: ['ropa', 'disfraces', 'halloween']
     },
@@ -194,7 +194,7 @@ export const prizes = [
         allow: true,
         title: 'Zapatillas Moradas',
         code: 'UNZAP2TIL4',
-        image: '/assets/images/prizes/zapatillas-moradas.png',
+        image: '/images/prizes/zapatillas-moradas.png',
         description: '',
         tags: ['ropa', 'zapatos', 'coloridas']
     },
@@ -204,7 +204,7 @@ export const prizes = [
         allow: true,
         title: 'Carpa Celeste',
         code: 'UNC4RP4LN3',
-        image: '/assets/images/prizes/carpa-celeste.png',
+        image: '/images/prizes/carpa-celeste.png',
         description: '',
         tags: ['muebles', 'carpas']
     },
@@ -214,7 +214,7 @@ export const prizes = [
         allow: true,
         title: 'Estatua de Ángel',
         code: 'UN35CULT6R',
-        image: '/assets/images/prizes/estatua-angel.png',
+        image: '/images/prizes/estatua-angel.png',
         description: '',
         tags: ['muebles', 'estatuas', 'esculturas']
     },
@@ -224,7 +224,7 @@ export const prizes = [
         allow: true,
         title: 'Estatua de Sirena',
         code: 'UN3ST4N3R2',
-        image: '/assets/images/prizes/estatua-sirena.png',
+        image: '/images/prizes/estatua-sirena.png',
         description: '',
         tags: ['muebles', 'estatuas', 'esculturas']
     },
@@ -234,7 +234,7 @@ export const prizes = [
         allow: true,
         title: 'Fuente de Elefante',
         code: 'UNF8N5TL7W',
-        image: '/assets/images/prizes/fuente-elefante.png',
+        image: '/images/prizes/fuente-elefante.png',
         description: '',
         tags: ['muebles', 'fuentes']
     },
@@ -244,7 +244,7 @@ export const prizes = [
         allow: true,
         title: 'Nube Rosa',
         code: 'UNUB19LSPT',
-        image: '/assets/images/prizes/nube-rosa.png',
+        image: '/images/prizes/nube-rosa.png',
         description: '',
         tags: ['transportes', 'colorido']
     },
@@ -254,7 +254,7 @@ export const prizes = [
         allow: true,
         title: 'Polo Amarillo con Rayas',
         code: 'UNR3M3L9Y6',
-        image: '/assets/images/prizes/polo-amarillo-rayas.png',
+        image: '/images/prizes/polo-amarillo-rayas.png',
         description: '',
         tags: ['ropa', 'polos', 'colorido']
     },
@@ -264,7 +264,7 @@ export const prizes = [
         allow: true,
         title: 'Nevera Negra',
         code: 'UNH3L4D32N',
-        image: '/assets/images/prizes/refri-negra.png',
+        image: '/images/prizes/refri-negra.png',
         description: '',
         tags: ['muebles', 'neveras', 'minimalista']
     },
@@ -274,7 +274,7 @@ export const prizes = [
         allow: true,
         title: 'Nevera Rosa',
         code: 'UNH3L4D34R',
-        image: '/assets/images/prizes/refri-rosa.png',
+        image: '/images/prizes/refri-rosa.png',
         description: '',
         tags: ['muebles', 'neveras']
     },
@@ -284,7 +284,7 @@ export const prizes = [
         allow: true,
         title: 'Saco Negro',
         code: 'UNT4P4D8N3',
-        image: '/assets/images/prizes/saco-negro.png',
+        image: '/images/prizes/saco-negro.png',
         description: '',
         tags: ['ropa', 'sacos', 'minimalista']
     },
@@ -294,7 +294,7 @@ export const prizes = [
         allow: true,
         title: 'Vestido de Otoño',
         code: 'UNR3M38T89',
-        image: '/assets/images/prizes/vestido-otono.png',
+        image: '/images/prizes/vestido-otono.png',
         description: '',
         tags: ['ropa', 'vestidos', 'otoño']
     }
