@@ -1,0 +1,40 @@
+// -----[ VARIABLES ]------
+// Colores
+$black: #050505;
+$white: #ffffff;
+
+$primary: #f9d611;
+$secondary: #f3a100;
+$accent: #f76822;
+$accent-100: #a2d7ef;
+$accent-200: #fe2e2e;
+$accent-300: #28be73;
+$accent-400: #dfdfdf;
+$accent-500: #1bb1d5;
+
+$shadow: rgba($black, 50%);
+$bright: rgba($white, 35%);
+
+$soft-dark: #121212;
+$hard-light: #606060;
+$dark-white: darken($white, 50%);
+
+// Fuentes
+@font-face {
+    font-family: 'MGFont';
+    src: url('/src/assets/fonts/MGFont/FONT.ttf');
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/src/assets/fonts/Aleo/Aleo-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/src/assets/fonts/Aleo/Aleo-Italic-VariableFont_wght.ttf');
+    font-style: italic;
+}
+
+$header: 'MGFont', sans-serif;
+$all: 'Aleo', serif;
