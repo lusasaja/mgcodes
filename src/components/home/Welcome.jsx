@@ -6,7 +6,7 @@ export default function Welcome() {
 
     return (
         <>
-            <img src='public/logo.png' alt="Logo de la web" width={'200px'}/>
+            <img src='/logo.png' alt="Logo de la web" width={'200px'}/>
             <div className="text">
                 <h1>¡Bienvenidos a MGCODES!</h1>
                 <small>{randomSlogan}</small>
