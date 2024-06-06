@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Header from './components/Header'
-import Footer from './components/Footer'
 import CollectionPage from './pages/CollectionPage'
 import HomePage from './pages/HomePage'
 import ExtrasPage from './pages/ExtrasPage'
