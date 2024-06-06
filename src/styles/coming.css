@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  font-weight: bold;
+}
+a.reset {
+  text-decoration: none;
+}
+
+img.fit {
+  object-fit: cover;
+}
+
+@font-face {
+  font-family: "MGFont";
+  src: url("/src/assets/fonts/MGFont/FONT.ttf");
+}
+@font-face {
+  font-family: "Aleo";
+  src: url("/src/assets/fonts/Aleo/Aleo-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Aleo";
+  src: url("/src/assets/fonts/Aleo/Aleo-Italic-VariableFont_wght.ttf");
+  font-style: italic;
+}
+main[of=coming] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+main[of=coming] .info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main[of=coming] .info .alert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main[of=coming] .info .alert h1 {
+  font-size: 3.5em;
+  color: #fe2e2e;
+}
+main[of=coming] .info .alert small {
+  font-weight: normal;
+  font-size: 1.2em;
+  opacity: 50%;
+}
+main[of=coming] .info .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+main[of=coming] .info .nav a {
+  font-size: 1.3em;
+}
+main[of=coming] .info .nav a.return {
+  background: #fe2e2e;
+  padding: 10px 20px;
+  color: #ffffff;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+main[of=coming] .info .nav a.return:hover {
+  background: #28be73;
+}
+main[of=coming] img {
+  width: 300px;
+  height: 300px;
+  object-fit: scale-down;
+}

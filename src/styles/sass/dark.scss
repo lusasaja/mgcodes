@@ -1,0 +1,153 @@
+@use 'variables.scss';
+
+.bigContainer.dark {
+    background: variables.$soft-dark;
+    color: variables.$white;
+
+    & header {
+        background: variables.$soft-dark;
+        border-bottom: 3px solid variables.$hard-light;
+
+        & .logo {
+            filter: drop-shadow(0 0 3px variables.$bright);
+        }
+
+        & .nav {
+            & .headerNav {
+                &.resalted {
+                    border-bottom: 3px solid variables.$secondary;
+                }
+                &:hover {
+                    border-bottom: 3px solid variables.$secondary;
+                    color: darken(variables.$white, 20%);
+                }
+            }
+
+            & #menuIcon {
+                &:hover {
+                    color: darken(variables.$white, 20%);
+                }
+            }
+
+            & .navMenuContainer {
+                background: variables.$soft-dark;
+                border: 3px solid darken(variables.$hard-light, 15%);
+
+                & .headerNavMenu {
+                    &:hover {
+                        background: darken(variables.$hard-light, 5%);
+                    }
+                    &.resalted {
+                        background: darken(variables.$hard-light, 5%);
+                    }
+                }
+            }
+        }
+
+        & .navIcon {
+            & i {
+                &:hover {
+                    color: darken(variables.$white, 20%);
+                }
+            }
+        }
+    }
+
+    & main {
+        &[of='home'] {
+            & .welcome {
+                & img {
+                    filter: drop-shadow(0 0 5px variables.$bright);
+                }
+
+                & .text {
+                    & h1 {
+                        background: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                    }
+
+                    & .link {
+                        border: 3px solid;
+                        border-image: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary) 1;
+                        background: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary);
+                        background-size: 200% 200%;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                        transition: transform 0.3s ease;
+                        &:hover {
+                            transform: scale(1.1);
+                            animation: gradientMove 1s forwards;
+                        }
+                        @keyframes gradientMove {
+                            0% {
+                                background-position: 0% 50%;
+                            }
+                            100% {
+                                background-position: -200% 50%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .info {
+                & .menu {
+                    & .menuItem {
+                        background: darken(variables.$hard-light, 20%);
+                        &.active {
+                            background: darken(variables.$secondary, 5%);
+                        }
+                        &:hover {
+                            background: darken(variables.$secondary, 5%);
+                        }
+                    }
+                }
+
+                & .content:not(.contact) {
+                    & section {
+                        & img {
+                            filter: drop-shadow(0 0 2.5px variables.$bright);
+                            &:hover {
+                                filter: none;
+                            }
+                        }
+
+                        & .container {
+                            background: darken(variables.$hard-light, 20%);
+                        }
+                    }
+                }
+
+                & .contact {
+                    & section {
+                        & h1 {
+                            background: darken(variables.$hard-light, 20%);
+                        }
+
+                        & .social {
+                            & i {
+                                background: lighten(variables.$soft-dark, 5%);
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .server {
+                & h1 {
+                    background: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                }
+            }
+        }
+    }
+
+    & footer {
+        background: darken(variables.$soft-dark, 2.5%);
+    }
+}

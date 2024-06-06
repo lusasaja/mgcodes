@@ -1,0 +1,517 @@
+@use 'styles/sass/variables.scss';
+@use 'styles/sass/reset.scss';
+@use 'styles/sass/structure.scss';
+@use 'styles/sass/dark.scss';
+
+main[of='home'] {
+    display: flex;
+    flex-direction: column;
+    padding: 75px;
+    padding-top: 0;
+    gap: 50px;
+    @media (width <= 1000px) {
+        padding-top: 0;
+    }
+    @media (width <= 700px) {
+        padding: 50px 25px;
+        padding-top: 0;
+        gap: 30px;
+    }
+    @media (width <= 500px) {
+        padding: 50px 25px;
+        padding-top: 0;
+        gap: 30px;
+    }
+
+    & .welcome {
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+            width: 200px;
+            height: 200px;
+            filter: drop-shadow(0 0 10px variables.$shadow);
+            @media (width <= 1000px) {
+                width: 150px;
+                height: 150px;
+            }
+            @media (width <= 700px) {
+                width: 130px;
+                height: 130px;
+            }
+            @media (width <= 500px) {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        & .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & h1 {
+                font-family: variables.$header;
+                font-weight: normal;
+                font-size: 5.5em;
+                color: variables.$accent-200;
+                text-align: center;
+                @media (width <= 1000px) {
+                    font-size: 5em;
+                    margin: 10px 0 5px;
+                }
+                @media (width <= 700px) {
+                    font-size: 4.5em;
+                    margin: 10px 0 5px;
+                }
+                @media (width <= 500px) {
+                    font-size: 4em;
+                    margin: 10px 0 5px;
+                }
+            }
+
+            & small {
+                font-size: 1.75em;
+                margin-bottom: 30px;
+                text-align: center;
+                width: 90%;
+                @media (width <= 1000px) {
+                    font-size: 1.5em;
+                    margin-bottom: 20px;
+                }
+                @media (width <= 700px) {
+                    font-size: 1.3em;
+                    margin-bottom: 20px;
+                }
+                @media (width <= 500px) {
+                    font-size: 1.25em;
+                    margin-bottom: 20px;
+                }
+            }
+
+            & .link {
+                background: variables.$accent-200;
+                color: variables.$white;
+                padding: 20px 30px;
+                border: none;
+                font-size: 1.5em;
+                transition: background 0.5s ease;
+                cursor: pointer;
+                user-select: none;
+                @media (width <= 1000px) {
+                    font-size: 1.2em;
+                }
+                @media (width <= 700px) {
+                    font-size: 1.2em;
+                }
+                @media (width <= 500px) {
+                    font-size: 1.2em;
+                }
+                &:hover {
+                    background: variables.$accent-300;
+                }
+            }
+        }
+    }
+
+    & .info {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        & .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (width <= 700px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding: 0 20px;
+            }
+            @media (width <= 500px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            & .menuItem {
+                background: variables.$accent-200;
+                padding: 15px 30px;
+                border: 0;
+                color: variables.$white;
+                font-size: 1.3em;
+                font-family: variables.$all;
+                border: 2px solid variables.$accent-400;
+                cursor: pointer;
+                user-select: none;
+                transition: background 0.3s ease;
+                @media (width <= 700px) {
+                    font-size: 1.2em;
+                }
+                @media (width <= 500px) {
+                    font-size: 1em;
+                }
+                &.active {
+                    background: variables.$accent-300;
+                }
+                &:hover {
+                    background: variables.$accent-300;
+                }
+                &:nth-child(1) {
+                    border-radius: 8px 0 0 8px;
+                    @media (width <= 700px) {
+                        border-radius: 8px 0 0 0;
+                    }
+                }
+                &:nth-child(2) {
+                    @media (width <= 700px) {
+                        border-radius: 0px 8px 0 0;
+                    }
+                }
+                &:nth-child(3) {
+                    @media (width <= 700px) {
+                        border-radius: 0px 0 0 8px;
+                    }
+                }
+                &:nth-child(4) {
+                    border-radius: 0 8px 8px 0px;
+                    @media (width <= 700px) {
+                        border-radius: 0 0 8px 0;
+                    }
+                }
+            }
+        }
+
+        & .content:not(.contact) {
+            min-height: 30vh;
+            display: flex;
+            flex-direction: column;
+            @media (width <= 1000px) {
+                gap: 50px;
+            }
+            @media (width <= 700px) {
+                gap: 50px;
+            }
+            @media (width <= 500px) {
+                gap: 50px;
+            }
+
+            & section {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @media (width <= 700px) {
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 0 40px;
+                }
+                @media (width <= 500px) {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                &:nth-child(2n) {
+                    text-align: right;
+
+                    & img {
+                        margin-left: 30px;
+                        @media (width <= 700px) {
+                            display: none;
+                        }
+                        @media (width <= 500px) {
+                            display: none;
+                        }
+                    }
+
+                    & .container {
+                        border-radius: 20px 0 0 20px;
+                        @media (width <= 700px) {
+                            border-radius: 20px;
+                        }
+                        @media (width <= 500px) {
+                            border-radius: 20px;
+                        }
+                    }
+                }
+
+                & img {
+                    width: 400px;
+                    height: 400px;
+                    margin-right: 50px;
+                    filter: drop-shadow(0 0 5px variables.$shadow);
+                    transition: filter 0.5s ease;
+                    @media (width <= 1000px) {
+                        width: 300px;
+                        height: 300px;
+                        object-fit: scale-down;
+                    }
+                    @media (width <= 700px) {
+                        width: 200px;
+                        height: 200px;
+                        margin: 0;
+                        object-fit: scale-down;
+                        display: none;
+                    }
+                    @media (width <= 500px) {
+                        width: 200px;
+                        height: 200px;
+                        margin: 0;
+                        object-fit: scale-down;
+                        display: none;
+                    }
+                    &:hover {
+                        filter: none;
+                    }
+                }
+
+                & .container {
+                    width: 50%;
+                    height: max-content;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 15px;
+                    background: variables.$accent-200;
+                    padding: 40px 60px;
+                    border-radius: 0 20px 20px 0;
+                    @media (width <= 700px) {
+                        width: 90%;
+                        text-align: center;
+                        padding: 20px 30px;
+                        border-radius: 20px;
+                    }
+                    @media (width <= 500px) {
+                        width: 90%;
+                        text-align: center;
+                        padding: 20px 30px;
+                        border-radius: 20px;
+                    }
+
+                    & h1 {
+                        color: variables.$white;
+                        font-size: 2em;
+                        text-transform: uppercase;
+                        @media (width <= 1000px) {
+                            font-size: 1.8em;
+                        }
+                        @media (width <= 700px) {
+                            font-size: 1.7em;
+                        }
+                        @media (width <= 500px) {
+                            font-size: 1.4em;
+                        }
+                    }
+
+                    & p {
+                        font-size: 1.1em;
+                        color: variables.$white;
+                        @media (width <= 500px) {
+                            font-size: 1.1em;
+                        }
+                        @media (width <= 500px) {
+                            font-size: 1em;
+                        }
+                    }
+
+                    & ul {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        & li {
+                            font-size: 1.1em;
+                            color: variables.$white;
+                            @media (width <= 700px) {
+                                font-size: 1em;
+                            }
+                            @media (width <= 500px) {
+                                font-size: 0.9em;
+                            }
+
+                            &::after {
+                                content: '-';
+                                margin-left: 10px;
+                                font-weight: bold;
+                            }
+
+                            @media (width <= 700px) {
+                                &::before {
+                                    content: '-';
+                                    margin-right: 10px;
+                                    font-weight: bold;
+                                }
+                                &::after {
+                                    content: '';
+                                    margin-left: 0px;
+                                }
+                            }
+                            @media (width <= 500px) {
+                                &::before {
+                                    content: '-';
+                                    margin-left: 10px;
+                                    font-weight: bold;
+                                }
+                                &::after {
+                                    content: '';
+                                    margin-left: 0px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            @media (width <= 700px) {
+                padding: 0;
+            }
+            @media (width <= 500px) {
+                padding: 0;
+            }
+
+            & section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+                @media (width <= 1000px) {
+                    gap: 30px;
+                }
+                @media (width <= 700px) {
+                    gap: 25px;
+                }
+                @media (width <= 500px) {
+                    gap: 25px;
+                }
+
+                & h1 {
+                    font-size: 2em;
+                    text-transform: uppercase;
+                    background: variables.$accent-200;
+                    color: variables.$white;
+                    padding: 10px 20px;
+                    border-radius: 8px;
+                    @media (width <= 700px) {
+                        font-size: 1.5em;
+                    }
+                    @media (width <= 500px) {
+                        font-size: 1.3em;
+                    }
+                }
+
+                & .social {
+                    display: flex;
+                    flex-direction: row;
+                    @media (width <= 700px) {
+                        gap: 30px;
+                    }
+                    @media (width <= 500px) {
+                        gap: 20px;
+                    }
+
+                    & i {
+                        background: variables.$accent-300;
+                        color: variables.$accent-400;
+                        padding: 10px;
+                        font-size: 2em;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        user-select: none;
+                        transition: color 0.3s ease, transform 0.3s ease;
+                        @media (width <= 500px) {
+                            font-size: 1.5em;
+                        }
+                        &:hover {
+                            transform: scale(1.1);
+                            color: variables.$white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .server {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        & a:hover + small{
+            opacity: 80%;
+        }
+
+        & h1 {
+            color: variables.$accent-200;
+            font-size: 5em;
+            font-family: variables.$header;
+            font-weight: normal;
+            @media (width <= 1000px) {
+                font-size: 4em;
+            }
+            @media (width <= 700px) {
+                font-size: 3.4em;
+            }
+            @media (width <= 500px) {
+                font-size: 2.8em;
+            }
+        }
+
+        & a {
+            background: linear-gradient(to right, #5865f2, darken(#5865f2, 5%), #5865f2);
+            background-size: 200% 200%;
+            color: variables.$white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 3em;
+            font-family: sans-serif;
+            padding: 10px 20px;
+            border-radius: 4px;
+            user-select: none;
+            transition: animation 0.5s ease, transform 0.3s ease;
+            @media (width <= 1000px) {
+                font-size: 2.5em;
+            }
+            @media (width <= 700px) {
+                font-size: 2.2em;
+            }
+            @media (width <= 500px) {
+                font-size: 1.8em;
+            }
+            &:hover {
+                animation: gradientMove 1s forwards;
+                transform: scale(1.1);
+            }
+            @keyframes gradientMove {
+                0% {
+                    background-position: 0% 50%;
+                }
+                100% {
+                    background-position: -200% 50%;
+                }
+            }
+        }
+
+        & small {
+            font-size: 1.2em;
+            opacity: 50%;
+            transition: opacity 0.5s ease;
+            @media (width <= 700px) {
+                font-size: 1.1em;
+            }
+            @media (width <= 500px) {
+                font-size: 1em;
+            }
+        }
+    }
+}

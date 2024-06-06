@@ -2,7 +2,7 @@
 @use 'variables';
 @use 'structure';
 
-main {
+main[of='collection'] {
     display: flex;
     flex-direction: column;
     padding: 50px 75px;

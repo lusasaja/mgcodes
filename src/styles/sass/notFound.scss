@@ -1,0 +1,62 @@
+@use 'reset.scss';
+@use 'variables.scss';
+
+main[of='notFound'] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+    & .info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        & .alert {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+    
+            & h1 {
+                font-size: 3.5em;
+                color: variables.$accent-200;
+            }
+    
+            & small {
+                font-weight: normal;
+                font-size: 1.2em;
+                opacity: 50%;
+            }
+        }
+    
+        & .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+    
+            & a {
+                font-size: 1.3em;
+                &.return {
+                    background: variables.$accent-200;
+                    padding: 10px 20px;
+                    color: variables.$white;
+                    user-select: none;;
+                    transition: background 0.3s ease;
+                    &:hover {
+                        background: variables.$accent-300;
+                    }
+                }
+            }
+        }
+    }
+
+    & img {
+        width: 300px;
+        height: 300px;
+        object-fit: scale-down;
+    }
+}

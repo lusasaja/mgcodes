@@ -1,13 +1,16 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
-export default function MiniMenu() {
+export default function MiniMenu({setShowInfo}) {
+    const location = useLocation();
+    
     return (
         <section class="miniMenu">
                 <div class="column">
                     <h1>Inicio</h1>
-                    <NavLink to="/#welcome">Código Aleatorio</NavLink>
-                    <NavLink to="/#about">Acerca de</NavLink>
-                    <NavLink to="/#contribute">Contribuir</NavLink>
+                    <NavHashLink to="/#welcome">Código Aleatorio</NavHashLink>
+                    <NavHashLink to="/#info">Acerca de</NavHashLink>
+                    <NavHashLink to="/#server">Discord</NavHashLink>
                 </div>
                 <div class="column">
                     <h1>Códigos</h1>

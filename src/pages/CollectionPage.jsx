@@ -8,7 +8,7 @@ import Controls from '../components/collection/Controls'
 import GalleryInfo from '../components/collection/GalleryInfo'
 import {prizes} from '../data/prizes'
 
-export default function CollectionPage() {
+export default function CollectionPage({darkMode, setDarkMode}) {
     // FILL CONFIGS
     const [currentPage, setCurrentPage] = useState(1);
     const [groupedPrizes, setGroupedPrizes] = useState([]);
@@ -88,16 +88,16 @@ export default function CollectionPage() {
     const tags = ['funciona', 'no funciona', 'verano', 'invierno', 'navidad', 'halloween'];
 
     return (
-        <>
-            <Header></Header>
-            <main>
+        <div className='bigContainer'>
+            <Header darkMode={darkMode} setDarkMode={setDarkMode}></Header>
+            <main of='collection' className={darkMode ? 'dark' : ''}>
                 <FilterOptions prizes={prizes} searchTerm={searchTerm} handleSearchChange={handleSearchChange} categories={categories} selectedCategory={selectedCategory} handleCategoryChange={handleCategoryChange} tags={tags} handleTagClick={handleTagClick} setFilter={setFilter} activeTags={activeTags}></FilterOptions>
                 <Gallery groupedPrizes={groupedPrizes} currentPage={currentPage}></Gallery>
                 <Controls currentPage={currentPage} fillGallery={fillGallery} groupedPrizes={groupedPrizes} totalPages={totalPages}></Controls>
                 <GalleryInfo totalPages={totalPages} currentPage={currentPage}></GalleryInfo>
             </main>
             <Footer></Footer>
-        </>
+        </div>
     )
 
     function dividirEnGruposAleatorios(array, tamanoGrupo) {

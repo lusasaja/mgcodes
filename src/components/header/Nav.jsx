@@ -27,14 +27,14 @@ export default function Nav() {
             <NavLink id="headerNavHome" to="/" className={({ isActive }) => isActive ? 'headerNav reset resalted' : 'headerNav reset'}><i className="bx bx-home-alt"></i>Home</NavLink>
             <NavLink id="headerNavCollection" to="/collection" className={({ isActive }) => isActive ? 'headerNav reset resalted' : 'headerNav reset'}>Colección</NavLink>
             <NavLink to="/extras" className={({ isActive }) => isActive ? 'headerNav reset resalted' : 'headerNav reset'}>Extras</NavLink>
-            <NavHashLink to="/#about" className={'headerNav reset'}>Acerca de</NavHashLink>
+            <NavHashLink to="/#info" className={'headerNav reset'}>Acerca de</NavHashLink>
 
             <i className="bx bx-menu" id="menuIcon" onClick={handleClick}></i>
             <div className="navMenuContainer" ref={OutRef}>
                 <NavLink id="headerNavMenuHome" to="/" className={({ isActive }) => isActive ? 'headerNavMenu reset resalted' : 'headerNavMenu reset'}>Home</NavLink>
                 <NavLink id="headerNavMenuCollection" to="/collection" className={({ isActive }) => isActive ? 'headerNavMenu reset resalted' : 'headerNavMenu reset'}>Colección</NavLink>
                 <NavLink to="/extras" className={({ isActive }) => isActive ? 'headerNavMenu reset resalted' : 'headerNavMenu reset'}>Extras</NavLink>
-                <NavHashLink to="/#about" className={'headerNavMenu reset'}>Acerca de</NavHashLink>
+                <NavHashLink to="/#info" className={'headerNavMenu reset'}>Acerca de</NavHashLink>
             </div>
         </nav>
     )

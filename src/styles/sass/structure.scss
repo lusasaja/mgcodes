@@ -1,6 +1,7 @@
 @use 'variables';
+@use 'dark';
 
-body, #root {
+.bigContainer {
     background: variables.$primary;
     color: variables.$black;
     font-family: variables.$all;
@@ -142,6 +143,7 @@ body, #root {
                 background: variables.$secondary;
                 border: 3px solid darken(variables.$secondary, 15%);
                 border-radius: 8px;
+                z-index: 9999;
                 @media (width <= 1000px) {
                     top: 75px;
                     right: 130px;

@@ -29,7 +29,106 @@ img.fit {
   src: url("/src/assets/fonts/Aleo/Aleo-Italic-VariableFont_wght.ttf");
   font-style: italic;
 }
-body, #root {
+.bigContainer.dark {
+  background: #121212;
+  color: #ffffff;
+}
+.bigContainer.dark header {
+  background: #121212;
+  border-bottom: 3px solid #606060;
+}
+.bigContainer.dark header .logo {
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.35));
+}
+.bigContainer.dark header .nav .headerNav.resalted {
+  border-bottom: 3px solid #f3a100;
+}
+.bigContainer.dark header .nav .headerNav:hover {
+  border-bottom: 3px solid #f3a100;
+  color: #cccccc;
+}
+.bigContainer.dark header .nav #menuIcon:hover {
+  color: #cccccc;
+}
+.bigContainer.dark header .nav .navMenuContainer {
+  background: #121212;
+  border: 3px solid #3a3a3a;
+}
+.bigContainer.dark header .nav .navMenuContainer .headerNavMenu:hover {
+  background: #535353;
+}
+.bigContainer.dark header .nav .navMenuContainer .headerNavMenu.resalted {
+  background: #535353;
+}
+.bigContainer.dark header .navIcon i:hover {
+  color: #cccccc;
+}
+.bigContainer.dark main[of=home] .welcome img {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.35));
+}
+.bigContainer.dark main[of=home] .welcome .text h1 {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bigContainer.dark main[of=home] .welcome .text .link {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: transform 0.3s ease;
+}
+.bigContainer.dark main[of=home] .welcome .text .link:hover {
+  transform: scale(1.1);
+  animation: gradientMove 1s forwards;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: -200% 50%;
+  }
+}
+.bigContainer.dark main[of=home] .info .menu .menuItem {
+  background: #2d2d2d;
+}
+.bigContainer.dark main[of=home] .info .menu .menuItem.active {
+  background: #da9000;
+}
+.bigContainer.dark main[of=home] .info .menu .menuItem:hover {
+  background: #da9000;
+}
+.bigContainer.dark main[of=home] .info .content:not(.contact) section img {
+  filter: drop-shadow(0 0 2.5px rgba(255, 255, 255, 0.35));
+}
+.bigContainer.dark main[of=home] .info .content:not(.contact) section img:hover {
+  filter: none;
+}
+.bigContainer.dark main[of=home] .info .content:not(.contact) section .container {
+  background: #2d2d2d;
+}
+.bigContainer.dark main[of=home] .info .contact section h1 {
+  background: #2d2d2d;
+}
+.bigContainer.dark main[of=home] .info .contact section .social i {
+  background: #1f1f1f;
+}
+.bigContainer.dark main[of=home] .server h1 {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bigContainer.dark footer {
+  background: #0c0c0c;
+}
+
+.bigContainer {
   background: #f9d611;
   color: #050505;
   font-family: "Aleo", serif;
@@ -40,7 +139,7 @@ body, #root {
   transition: background 0.8s ease, color 0.5s ease, filter 0.5 ease;
   font-size: 16px;
 }
-body header, #root header {
+.bigContainer header {
   background: #f3a100;
   height: 15vh;
   border-bottom: 3px solid #fe2e2e;
@@ -51,16 +150,16 @@ body header, #root header {
   width: 100%;
 }
 @media (width <= 700px) {
-  body header, #root header {
+  .bigContainer header {
     padding: 0 20px;
   }
 }
 @media (width <= 500px) {
-  body header, #root header {
+  .bigContainer header {
     padding: 0 20px;
   }
 }
-body header .logo, #root header .logo {
+.bigContainer header .logo {
   font-family: "MGFont", sans-serif;
   font-size: 4em;
   color: #dfdfdf;
@@ -75,28 +174,28 @@ body header .logo, #root header .logo {
   gap: 5px;
 }
 @media (width <= 500px) {
-  body header .logo, #root header .logo {
+  .bigContainer header .logo {
     font-size: 2.8em;
   }
 }
 @media (width <= 700px) {
-  body header .logo, #root header .logo {
+  .bigContainer header .logo {
     font-size: 3.5em;
   }
 }
-body header .logo .resalted, #root header .logo .resalted {
+.bigContainer header .logo .resalted {
   background: linear-gradient(to bottom, #f9d611, #f3a100);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-body header .nav, #root header .nav {
+.bigContainer header .nav {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-body header .nav .headerNav, #root header .nav .headerNav {
+.bigContainer header .nav .headerNav {
   font-size: 1.4em;
   display: flex;
   align-items: center;
@@ -108,58 +207,58 @@ body header .nav .headerNav, #root header .nav .headerNav {
   align-items: center;
 }
 @media (width <= 1000px) {
-  body header .nav .headerNav, #root header .nav .headerNav {
+  .bigContainer header .nav .headerNav {
     display: none;
   }
 }
 @media (width <= 700px) {
-  body header .nav .headerNav, #root header .nav .headerNav {
+  .bigContainer header .nav .headerNav {
     display: none;
   }
 }
 @media (width <= 500px) {
-  body header .nav .headerNav, #root header .nav .headerNav {
+  .bigContainer header .nav .headerNav {
     display: none;
   }
 }
 @media (width <= 1000px) {
-  body header .nav .headerNav#headerNavHome, #root header .nav .headerNav#headerNavHome {
+  .bigContainer header .nav .headerNav#headerNavHome {
     display: flex;
   }
 }
 @media (width <= 700px) {
-  body header .nav .headerNav#headerNavHome, #root header .nav .headerNav#headerNavHome {
+  .bigContainer header .nav .headerNav#headerNavHome {
     display: flex;
   }
 }
 @media (width <= 500px) {
-  body header .nav .headerNav#headerNavHome, #root header .nav .headerNav#headerNavHome {
+  .bigContainer header .nav .headerNav#headerNavHome {
     display: none;
   }
 }
 @media (width <= 1000px) {
-  body header .nav .headerNav#headerNavCollection, #root header .nav .headerNav#headerNavCollection {
+  .bigContainer header .nav .headerNav#headerNavCollection {
     display: flex;
   }
 }
 @media (width <= 700px) {
-  body header .nav .headerNav#headerNavCollection, #root header .nav .headerNav#headerNavCollection {
+  .bigContainer header .nav .headerNav#headerNavCollection {
     display: none;
   }
 }
 @media (width <= 500px) {
-  body header .nav .headerNav#headerNavCollection, #root header .nav .headerNav#headerNavCollection {
+  .bigContainer header .nav .headerNav#headerNavCollection {
     display: none;
   }
 }
-body header .nav .headerNav.resalted, #root header .nav .headerNav.resalted {
+.bigContainer header .nav .headerNav.resalted {
   border-bottom: 3px solid #fe2e2e;
 }
-body header .nav .headerNav:hover, #root header .nav .headerNav:hover {
+.bigContainer header .nav .headerNav:hover {
   border-bottom: 3px solid #fe2e2e;
   color: #1f1f1f;
 }
-body header .nav #menuIcon, #root header .nav #menuIcon {
+.bigContainer header .nav #menuIcon {
   position: relative;
   display: none;
   font-size: 1.7em;
@@ -167,25 +266,25 @@ body header .nav #menuIcon, #root header .nav #menuIcon {
   cursor: pointer;
 }
 @media (width <= 1000px) {
-  body header .nav #menuIcon, #root header .nav #menuIcon {
+  .bigContainer header .nav #menuIcon {
     display: block;
   }
 }
 @media (width <= 700px) {
-  body header .nav #menuIcon, #root header .nav #menuIcon {
+  .bigContainer header .nav #menuIcon {
     display: block;
   }
 }
 @media (width <= 500px) {
-  body header .nav #menuIcon, #root header .nav #menuIcon {
+  .bigContainer header .nav #menuIcon {
     display: block;
   }
 }
-body header .nav #menuIcon:hover, #root header .nav #menuIcon:hover {
+.bigContainer header .nav #menuIcon:hover {
   color: #2b2b2b;
   transform: scale(1.1);
 }
-body header .nav .navMenuContainer, #root header .nav .navMenuContainer {
+.bigContainer header .nav .navMenuContainer {
   top: 60px;
   position: absolute;
   display: none;
@@ -193,88 +292,89 @@ body header .nav .navMenuContainer, #root header .nav .navMenuContainer {
   background: #f3a100;
   border: 3px solid #a76e00;
   border-radius: 8px;
+  z-index: 9999;
 }
 @media (width <= 1000px) {
-  body header .nav .navMenuContainer, #root header .nav .navMenuContainer {
+  .bigContainer header .nav .navMenuContainer {
     top: 75px;
     right: 130px;
   }
 }
 @media (width <= 700px) {
-  body header .nav .navMenuContainer, #root header .nav .navMenuContainer {
+  .bigContainer header .nav .navMenuContainer {
     top: 75px;
     right: 110px;
   }
 }
-body header .nav .navMenuContainer.active, #root header .nav .navMenuContainer.active {
+.bigContainer header .nav .navMenuContainer.active {
   display: flex;
 }
-body header .nav .navMenuContainer .headerNavMenu, #root header .nav .navMenuContainer .headerNavMenu {
+.bigContainer header .nav .navMenuContainer .headerNavMenu {
   font-size: 1.3em;
   padding: 10px 15px;
 }
-body header .nav .navMenuContainer .headerNavMenu:hover, #root header .nav .navMenuContainer .headerNavMenu:hover {
+.bigContainer header .nav .navMenuContainer .headerNavMenu:hover {
   background: #da9000;
 }
-body header .nav .navMenuContainer .headerNavMenu.resalted, #root header .nav .navMenuContainer .headerNavMenu.resalted {
+.bigContainer header .nav .navMenuContainer .headerNavMenu.resalted {
   background: #da9000;
 }
 @media (width <= 1000px) {
-  body header .nav .navMenuContainer .headerNavMenu#headerNavMenuHome, #root header .nav .navMenuContainer .headerNavMenu#headerNavMenuHome {
+  .bigContainer header .nav .navMenuContainer .headerNavMenu#headerNavMenuHome {
     display: none;
   }
 }
 @media (width <= 700px) {
-  body header .nav .navMenuContainer .headerNavMenu#headerNavMenuHome, #root header .nav .navMenuContainer .headerNavMenu#headerNavMenuHome {
+  .bigContainer header .nav .navMenuContainer .headerNavMenu#headerNavMenuHome {
     display: none;
   }
 }
 @media (width <= 500px) {
-  body header .nav .navMenuContainer .headerNavMenu#headerNavMenuHome, #root header .nav .navMenuContainer .headerNavMenu#headerNavMenuHome {
+  .bigContainer header .nav .navMenuContainer .headerNavMenu#headerNavMenuHome {
     display: block;
   }
 }
 @media (width <= 1000px) {
-  body header .nav .navMenuContainer .headerNavMenu#headerNavMenuCollection, #root header .nav .navMenuContainer .headerNavMenu#headerNavMenuCollection {
+  .bigContainer header .nav .navMenuContainer .headerNavMenu#headerNavMenuCollection {
     display: none;
   }
 }
 @media (width <= 700px) {
-  body header .nav .navMenuContainer .headerNavMenu#headerNavMenuCollection, #root header .nav .navMenuContainer .headerNavMenu#headerNavMenuCollection {
+  .bigContainer header .nav .navMenuContainer .headerNavMenu#headerNavMenuCollection {
     display: block;
   }
 }
 @media (width <= 500px) {
-  body header .nav .navMenuContainer .headerNavMenu#headerNavMenuCollection, #root header .nav .navMenuContainer .headerNavMenu#headerNavMenuCollection {
+  .bigContainer header .nav .navMenuContainer .headerNavMenu#headerNavMenuCollection {
     display: block;
   }
 }
-body header .navIcon, #root header .navIcon {
+.bigContainer header .navIcon {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-body header .navIcon i, #root header .navIcon i {
+.bigContainer header .navIcon i {
   font-size: 1.7em;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
-body header .navIcon i:hover, #root header .navIcon i:hover {
+.bigContainer header .navIcon i:hover {
   color: #2b2b2b;
   transform: scale(1.1);
 }
-body main, #root main {
+.bigContainer main {
   min-height: 85vh;
 }
-body footer, #root footer {
+.bigContainer footer {
   background: #fe2e2e;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
 }
-body footer .credits, #root footer .credits {
+.bigContainer footer .credits {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,29 +382,29 @@ body footer .credits, #root footer .credits {
   gap: 5px;
   width: 100%;
 }
-body footer hr, #root footer hr {
+.bigContainer footer hr {
   width: 50%;
 }
-body footer .details, #root footer .details {
+.bigContainer footer .details {
   display: grid;
   grid-template-columns: 65% 35%;
   width: 100%;
   padding: 30px 40px;
 }
 @media (width <= 1000px) {
-  body footer .details, #root footer .details {
+  .bigContainer footer .details {
     grid-template-columns: 55% 45%;
   }
 }
 @media (width <= 850px) {
-  body footer .details, #root footer .details {
+  .bigContainer footer .details {
     display: flex;
     flex-direction: column;
     gap: 50px;
   }
 }
 @media (width <= 700px) {
-  body footer .details, #root footer .details {
+  .bigContainer footer .details {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -312,141 +412,141 @@ body footer .details, #root footer .details {
   }
 }
 @media (width <= 500px) {
-  body footer .details, #root footer .details {
+  .bigContainer footer .details {
     display: flex;
     flex-direction: column;
     gap: 50px;
     padidng: 20px 30px;
   }
 }
-body footer .details .info, #root footer .details .info {
+.bigContainer footer .details .info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 @media (width <= 850px) {
-  body footer .details .info, #root footer .details .info {
+  .bigContainer footer .details .info {
     flex-direction: row;
     align-items: center;
     gap: 20px;
   }
 }
 @media (width <= 700px) {
-  body footer .details .info, #root footer .details .info {
+  .bigContainer footer .details .info {
     flex-direction: row;
     align-items: center;
     gap: 20px;
   }
 }
 @media (width <= 500px) {
-  body footer .details .info, #root footer .details .info {
+  .bigContainer footer .details .info {
     align-items: center;
     flex-direction: column;
     gap: 0px;
   }
 }
-body footer .details .info .text, #root footer .details .info .text {
+.bigContainer footer .details .info .text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
 @media (width <= 500px) {
-  body footer .details .info .text, #root footer .details .info .text {
+  .bigContainer footer .details .info .text {
     align-items: center;
   }
 }
-body footer .details .info .text p, #root footer .details .info .text p {
+.bigContainer footer .details .info .text p {
   font-size: 0.9em;
 }
-body footer .details .info .text p a, #root footer .details .info .text p a {
+.bigContainer footer .details .info .text p a {
   font-weight: bold;
 }
-body footer .details .miniMenu, #root footer .details .miniMenu {
+.bigContainer footer .details .miniMenu {
   display: flex;
   gap: 50px;
 }
 @media (width <= 850px) {
-  body footer .details .miniMenu, #root footer .details .miniMenu {
+  .bigContainer footer .details .miniMenu {
     justify-content: center;
     gap: 100px;
   }
 }
 @media (width <= 700px) {
-  body footer .details .miniMenu, #root footer .details .miniMenu {
+  .bigContainer footer .details .miniMenu {
     justify-content: center;
     gap: 50px;
   }
 }
 @media (width <= 500px) {
-  body footer .details .miniMenu, #root footer .details .miniMenu {
+  .bigContainer footer .details .miniMenu {
     justify-content: center;
     gap: 50px;
   }
 }
-body footer .details .miniMenu .column, #root footer .details .miniMenu .column {
+.bigContainer footer .details .miniMenu .column {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-body footer .details .miniMenu .column h1, #root footer .details .miniMenu .column h1 {
+.bigContainer footer .details .miniMenu .column h1 {
   font-family: "MGFont", sans-serif;
   font-size: 1.2em;
   font-weight: normal;
 }
-body footer .details .miniMenu .column a, #root footer .details .miniMenu .column a {
+.bigContainer footer .details .miniMenu .column a {
   font-size: 0.9em;
 }
 
-main {
+main[of=collection] {
   display: flex;
   flex-direction: column;
   padding: 50px 75px;
   gap: 50px;
 }
 @media (width <= 500px) {
-  main {
+  main[of=collection] {
     padding: 35px 20px;
     gap: 35px;
   }
 }
-main .filterContainer {
+main[of=collection] .filterContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 25px;
 }
-main .filterContainer h1 {
+main[of=collection] .filterContainer h1 {
   font-size: 2em;
   text-align: center;
 }
 @media (width <= 500px) {
-  main .filterContainer h1 {
+  main[of=collection] .filterContainer h1 {
     font-size: 1.5em;
   }
 }
-main .filterContainer .group {
+main[of=collection] .filterContainer .group {
   display: flex;
   gap: 50px;
 }
 @media (width <= 500px) {
-  main .filterContainer .group {
+  main[of=collection] .filterContainer .group {
     flex-direction: column;
     gap: 25px;
   }
 }
-main .filterContainer .group search {
+main[of=collection] .filterContainer .group search {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
 }
-main .filterContainer .group search .search {
+main[of=collection] .filterContainer .group search .search {
   display: flex;
   justify-content: center;
 }
-main .filterContainer .group search .search input {
+main[of=collection] .filterContainer .group search .search input {
   background: #ffffff;
   border: 3px solid #fe2e2e;
   padding: 5px 10px;
@@ -454,7 +554,7 @@ main .filterContainer .group search .search input {
   border-radius: 12px 0 0 12px;
   width: 250px;
 }
-main .filterContainer .group search .search button {
+main[of=collection] .filterContainer .group search .search button {
   background: #fe2e2e;
   padding: 10px;
   font-size: 1.3em;
@@ -466,34 +566,34 @@ main .filterContainer .group search .search button {
   justify-content: center;
   align-items: center;
 }
-main .filterContainer .group search .search button:hover {
+main[of=collection] .filterContainer .group search .search button:hover {
   background: #fe1f1f;
 }
-main .filterContainer .group search .search button:active {
+main[of=collection] .filterContainer .group search .search button:active {
   background: #f80101;
 }
-main .filterContainer .group .filter {
+main[of=collection] .filterContainer .group .filter {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
   align-items: center;
 }
-main .filterContainer .group .filter select {
+main[of=collection] .filterContainer .group .filter select {
   border: 3px solid #fe2e2e;
   padding: 5px 10px;
   font-size: 1.35em;
   text-transform: capitalize;
 }
 @media (width <= 500px) {
-  main .filterContainer .group .filter select {
+  main[of=collection] .filterContainer .group .filter select {
     width: 150px;
   }
 }
-main .filterContainer .group .filter select option {
+main[of=collection] .filterContainer .group .filter select option {
   text-transform: capitalize;
 }
-main .filterContainer .tags {
+main[of=collection] .filterContainer .tags {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -501,7 +601,7 @@ main .filterContainer .tags {
   width: 80%;
   gap: 10px;
 }
-main .filterContainer .tags .container {
+main[of=collection] .filterContainer .tags .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -509,7 +609,7 @@ main .filterContainer .tags .container {
   gap: 10px;
   flex-wrap: wrap;
 }
-main .filterContainer .tags .container .tag {
+main[of=collection] .filterContainer .tags .container .tag {
   background: #1bb1d5;
   padding: 10px 15px;
   font-size: 1.1em;
@@ -523,45 +623,45 @@ main .filterContainer .tags .container .tag {
   text-transform: capitalize;
 }
 @media (width <= 500px) {
-  main .filterContainer .tags .container .tag {
+  main[of=collection] .filterContainer .tags .container .tag {
     font-size: 1em;
   }
 }
-main .filterContainer .tags .container .tag:hover {
+main[of=collection] .filterContainer .tags .container .tag:hover {
   background: #26b36d;
 }
-main .filterContainer .tags .container .tag.active {
+main[of=collection] .filterContainer .tags .container .tag.active {
   background: #28be73;
 }
-main .gallery {
+main[of=collection] .gallery {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .gallery .container {
+main[of=collection] .gallery .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   place-items: center;
   gap: 30px;
 }
 @media (width <= 1000px) {
-  main .gallery .container {
+  main[of=collection] .gallery .container {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 }
 @media (width <= 700px) {
-  main .gallery .container {
+  main[of=collection] .gallery .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (width <= 500px) {
-  main .gallery .container {
+  main[of=collection] .gallery .container {
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-main .gallery .container .item {
+main[of=collection] .gallery .container .item {
   background: #28be73;
   border-radius: 8px;
   padding: 20px 30px;
@@ -576,56 +676,56 @@ main .gallery .container .item {
   transition: transform 0.5s ease;
 }
 @media (width <= 700px) {
-  main .gallery .container .item {
+  main[of=collection] .gallery .container .item {
     padding: 10px 15px;
   }
 }
-main .gallery .container .item:hover {
+main[of=collection] .gallery .container .item:hover {
   transform: scale(1.1);
 }
-main .gallery .container .item h1 {
+main[of=collection] .gallery .container .item h1 {
   color: #ffffff;
   margin-bottom: 5px;
 }
 @media (width <= 1000px) {
-  main .gallery .container .item h1 {
+  main[of=collection] .gallery .container .item h1 {
     font-size: 1.4em;
   }
 }
 @media (width <= 700px) {
-  main .gallery .container .item h1 {
+  main[of=collection] .gallery .container .item h1 {
     font-size: 1.6em;
   }
 }
 @media (width <= 500px) {
-  main .gallery .container .item h1 {
+  main[of=collection] .gallery .container .item h1 {
     font-size: 1.2em;
   }
 }
-main .gallery .container .item img {
+main[of=collection] .gallery .container .item img {
   width: 120px;
   height: 120px;
   object-fit: scale-down;
 }
 @media (width <= 1000px) {
-  main .gallery .container .item img {
+  main[of=collection] .gallery .container .item img {
     width: 100px;
     height: 100px;
   }
 }
 @media (width <= 700px) {
-  main .gallery .container .item img {
+  main[of=collection] .gallery .container .item img {
     width: 150px;
     height: 150px;
   }
 }
 @media (width <= 500px) {
-  main .gallery .container .item img {
+  main[of=collection] .gallery .container .item img {
     width: 100px;
     height: 100px;
   }
 }
-main .gallery .container .item .status {
+main[of=collection] .gallery .container .item .status {
   background: #ffffff;
   color: #28be73;
   font-size: 0.9em;
@@ -636,25 +736,25 @@ main .gallery .container .item .status {
   align-items: center;
   gap: 5px;
 }
-main .gallery .container .item.red {
+main[of=collection] .gallery .container .item.red {
   background: #fe2e2e;
 }
-main .gallery .container .item.red .status {
+main[of=collection] .gallery .container .item.red .status {
   color: #fe2e2e;
 }
-main .controls {
+main[of=collection] .controls {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-main .controls .numberButtons {
+main[of=collection] .controls .numberButtons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-main .controls button {
+main[of=collection] .controls button {
   background: #fe2e2e;
   border: 0;
   font-weight: bold;
@@ -665,14 +765,14 @@ main .controls button {
   cursor: pointer;
 }
 @media (width <= 500px) {
-  main .controls button {
+  main[of=collection] .controls button {
     font-size: 0.8em;
   }
 }
-main .controls button:hover {
+main[of=collection] .controls button:hover {
   background: #fe1515;
 }
-main .gallery-info {
+main[of=collection] .gallery-info {
   font-size: 1.1em;
   text-transform: uppercase;
   display: flex;
@@ -680,7 +780,7 @@ main .gallery-info {
   align-items: center;
 }
 @media (width <= 500px) {
-  main .gallery-info {
+  main[of=collection] .gallery-info {
     font-size: 0.9em;
   }
 }
