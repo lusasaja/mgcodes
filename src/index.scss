@@ -9,17 +9,15 @@ main[of='home'] {
     padding: 75px;
     padding-top: 0;
     gap: 50px;
-    @media (width <= 1000px) {
-        padding-top: 0;
-    }
-    @media (width <= 700px) {
+    @media (width <= 1024px) {
         padding: 50px 25px;
         padding-top: 0;
         gap: 30px;
     }
-    @media (width <= 500px) {
-        padding: 50px 25px;
+    @media (width <= 320px) {
+        padding: 50px 10px;
         padding-top: 0;
+        padding-bottom: 40px;
         gap: 30px;
     }
 
@@ -34,7 +32,7 @@ main[of='home'] {
             width: 200px;
             height: 200px;
             filter: drop-shadow(0 0 10px variables.$shadow);
-            @media (width <= 1000px) {
+            @media (width <= 1024px) {
                 width: 150px;
                 height: 150px;
             }
@@ -45,6 +43,10 @@ main[of='home'] {
             @media (width <= 500px) {
                 width: 120px;
                 height: 120px;
+            }
+            @media (width <= 320px) {
+                width: 110px;
+                height: 110px;
             }
         }
 
@@ -59,17 +61,26 @@ main[of='home'] {
                 font-size: 5.5em;
                 color: variables.$accent-200;
                 text-align: center;
-                @media (width <= 1000px) {
-                    font-size: 5em;
+                @media (width <= 1024px) {
+                    font-size: 4.8em;
                     margin: 10px 0 5px;
                 }
-                @media (width <= 700px) {
-                    font-size: 4.5em;
+                @media (width <= 768px) {
+                    font-size: 4.2em;
                     margin: 10px 0 5px;
                 }
-                @media (width <= 500px) {
-                    font-size: 4em;
+                @media (width <= 768px) {
+                    font-size: 3.5em;
                     margin: 10px 0 5px;
+                }
+                @media (width <= 425px) {
+                    font-size: 3em;
+                }
+                @media (width <= 375px) {
+                    font-size: 2.8em;
+                }
+                @media (width <= 320px) {
+                    font-size: 2.3em;
                 }
             }
 
@@ -78,17 +89,22 @@ main[of='home'] {
                 margin-bottom: 30px;
                 text-align: center;
                 width: 90%;
-                @media (width <= 1000px) {
-                    font-size: 1.5em;
+                @media (width <= 1024px) {
+                    font-size: 1.4em;
                     margin-bottom: 20px;
                 }
-                @media (width <= 700px) {
-                    font-size: 1.3em;
+                @media (width <= 768px) {
+                    font-size: 1.2em;
                     margin-bottom: 20px;
                 }
-                @media (width <= 500px) {
-                    font-size: 1.25em;
-                    margin-bottom: 20px;
+                @media (width <= 425px) {
+                    font-size: 1em;
+                }
+                @media (width <= 375px) {
+                    font-size: 0.9em;
+                }
+                @media (width <= 320px) {
+                    font-size: 0.8em;
                 }
             }
 
@@ -110,6 +126,10 @@ main[of='home'] {
                 @media (width <= 500px) {
                     font-size: 1.2em;
                 }
+                @media (width <= 320px) {
+                    font-size: 1.1em;
+                    padding: 15px 20px;
+                }
                 &:hover {
                     background: variables.$accent-300;
                 }
@@ -121,6 +141,9 @@ main[of='home'] {
         display: flex;
         flex-direction: column;
         gap: 50px;
+        @media (width <= 425px) {
+            gap: 30px;
+        }
 
         & .menu {
             display: flex;
@@ -150,8 +173,17 @@ main[of='home'] {
                 @media (width <= 700px) {
                     font-size: 1.2em;
                 }
-                @media (width <= 500px) {
+                @media (width <= 425px) {
+                    padding: 12px 25px;
                     font-size: 1em;
+                }
+                @media (width <= 375px) {
+                    padding: 10px 20px;
+                    font-size: 0.9em;
+                }
+                @media (width <= 320px) {
+                    padding: 10px 20px;
+                    font-size: 0.8em;
                 }
                 &.active {
                     background: variables.$accent-300;
@@ -188,28 +220,27 @@ main[of='home'] {
             min-height: 30vh;
             display: flex;
             flex-direction: column;
-            @media (width <= 1000px) {
+            @media (width <= 1024px) {
                 gap: 50px;
+                padding: 0 30px;
             }
-            @media (width <= 700px) {
+            @media (width <= 768px) {
                 gap: 50px;
-            }
-            @media (width <= 500px) {
-                gap: 50px;
+                padding: 0;
             }
 
             & section {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                @media (width <= 700px) {
-                    flex-direction: column;
-                    justify-content: center;
-                    padding: 0 40px;
+                @media (width <= 768px) {
+                    padding: 0 30px;
+                    gap: 30px;
                 }
-                @media (width <= 500px) {
+                @media (width <= 425px) {
                     flex-direction: column;
                     justify-content: center;
+                    padding: 0 20px;
                 }
                 &:nth-child(2n) {
                     text-align: right;
@@ -241,19 +272,17 @@ main[of='home'] {
                     margin-right: 50px;
                     filter: drop-shadow(0 0 5px variables.$shadow);
                     transition: filter 0.5s ease;
-                    @media (width <= 1000px) {
+                    @media (width <= 1024px) {
                         width: 300px;
                         height: 300px;
                         object-fit: scale-down;
                     }
-                    @media (width <= 700px) {
-                        width: 200px;
-                        height: 200px;
-                        margin: 0;
-                        object-fit: scale-down;
-                        display: none;
+                    @media (width <= 768px) {
+                        width: 250px;
+                        height: 250px;
+                        object-fit: fill;
                     }
-                    @media (width <= 500px) {
+                    @media (width <= 425px) {
                         width: 200px;
                         height: 200px;
                         margin: 0;
@@ -275,17 +304,15 @@ main[of='home'] {
                     background: variables.$accent-200;
                     padding: 40px 60px;
                     border-radius: 0 20px 20px 0;
-                    @media (width <= 700px) {
-                        width: 90%;
+                    @media (width <= 768px) {
+                        width: 55%;
                         text-align: center;
                         padding: 20px 30px;
-                        border-radius: 20px;
                     }
-                    @media (width <= 500px) {
-                        width: 90%;
-                        text-align: center;
-                        padding: 20px 30px;
+                    @media (width <= 425px) {
                         border-radius: 20px;
+                        width: 90%;
+                        gap: 7.5px;
                     }
 
                     & h1 {
@@ -311,6 +338,12 @@ main[of='home'] {
                         }
                         @media (width <= 500px) {
                             font-size: 1em;
+                        }
+                        @media (width <= 375px) {
+                            font-size: 0.9em;
+                        }
+                        @media (width <= 320px) {
+                            font-size: 0.8em;
                         }
                     }
 
@@ -373,8 +406,12 @@ main[of='home'] {
             @media (width <= 700px) {
                 padding: 0;
             }
-            @media (width <= 500px) {
-                padding: 0;
+            @media (width <= 425px) {
+                padding: 0 30px;
+            }
+            @media (width <= 375px) {
+                padding: 0 30px;
+                gap: 35px;
             }
 
             & section {
@@ -397,23 +434,30 @@ main[of='home'] {
                     text-transform: uppercase;
                     background: variables.$accent-200;
                     color: variables.$white;
+                    text-align: center;
                     padding: 10px 20px;
                     border-radius: 8px;
-                    @media (width <= 700px) {
-                        font-size: 1.5em;
+                    @media (width <= 768px) {
+                        font-size: 1.8em;
                     }
-                    @media (width <= 500px) {
+                    @media (width <= 425px) {
                         font-size: 1.3em;
+                    }
+                    @media (width <= 375px) {
+                        font-size: 1.1em;
+                    }
+                    @media (width <= 320px) {
+                        font-size: 1em;
                     }
                 }
 
                 & .social {
                     display: flex;
                     flex-direction: row;
-                    @media (width <= 700px) {
+                    @media (width <= 768px) {
                         gap: 30px;
                     }
-                    @media (width <= 500px) {
+                    @media (width <= 425px) {
                         gap: 20px;
                     }
 
@@ -426,8 +470,17 @@ main[of='home'] {
                         cursor: pointer;
                         user-select: none;
                         transition: color 0.3s ease, transform 0.3s ease;
-                        @media (width <= 500px) {
+                        @media (width <= 768px) {
+                            font-size: 1.8em;
+                        }
+                        @media (width <= 425px) {
                             font-size: 1.5em;
+                        }
+                        @media (width <= 320px) {
+                            font-size: 1.3em;
+                        }
+                        @media (width <= 320px) {
+                            font-size: 1.2em;
                         }
                         &:hover {
                             transform: scale(1.1);
@@ -454,14 +507,18 @@ main[of='home'] {
             font-size: 5em;
             font-family: variables.$header;
             font-weight: normal;
+            text-align: center;
             @media (width <= 1000px) {
                 font-size: 4em;
             }
-            @media (width <= 700px) {
+            @media (width <= 768px) {
                 font-size: 3.4em;
             }
-            @media (width <= 500px) {
+            @media (width <= 425px) {
                 font-size: 2.8em;
+            }
+            @media (width <= 320px) {
+                font-size: 2.5em;
             }
         }
 
@@ -482,11 +539,14 @@ main[of='home'] {
             @media (width <= 1000px) {
                 font-size: 2.5em;
             }
-            @media (width <= 700px) {
+            @media (width <= 768px) {
                 font-size: 2.2em;
             }
             @media (width <= 500px) {
                 font-size: 1.8em;
+            }
+            @media (width <= 320px) {
+                font-size: 1.5em;
             }
             &:hover {
                 animation: gradientMove 1s forwards;
@@ -506,11 +566,16 @@ main[of='home'] {
             font-size: 1.2em;
             opacity: 50%;
             transition: opacity 0.5s ease;
-            @media (width <= 700px) {
+            text-align: center;
+            @media (width <= 768px) {
                 font-size: 1.1em;
             }
-            @media (width <= 500px) {
-                font-size: 1em;
+            @media (width <= 425px) {
+                font-size: 0.9em;
+            }
+            @media (width <= 320px) {
+                font-size: 0.8em;
+                padding: 0 20px;
             }
         }
     }

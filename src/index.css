@@ -125,7 +125,7 @@ img.fit {
   color: transparent;
 }
 .bigContainer.dark footer {
-  background: #0c0c0c;
+  background: #0f0f0f;
 }
 
 .bigContainer {
@@ -159,6 +159,11 @@ img.fit {
     padding: 0 20px;
   }
 }
+@media (width <= 320px) {
+  .bigContainer header {
+    padding: 0 20px;
+  }
+}
 .bigContainer header .logo {
   font-family: "MGFont", sans-serif;
   font-size: 4em;
@@ -173,14 +178,20 @@ img.fit {
   align-items: center;
   gap: 5px;
 }
-@media (width <= 500px) {
+@media (width <= 768x) {
+  .bigContainer header .logo {
+    font-size: 3.5em;
+  }
+}
+@media (width <= 425px) {
   .bigContainer header .logo {
     font-size: 2.8em;
   }
 }
-@media (width <= 700px) {
+@media (width <= 320px) {
   .bigContainer header .logo {
-    font-size: 3.5em;
+    font-size: 2.1em;
+    gap: 3px;
   }
 }
 .bigContainer header .logo .resalted {
@@ -195,6 +206,11 @@ img.fit {
   align-items: center;
   gap: 30px;
 }
+@media (width <= 768px) {
+  .bigContainer header .nav {
+    gap: 20px;
+  }
+}
 .bigContainer header .nav .headerNav {
   font-size: 1.4em;
   display: flex;
@@ -206,19 +222,10 @@ img.fit {
   transition: border-bottom 0.3s ease;
   align-items: center;
 }
-@media (width <= 1000px) {
+@media (width <= 768px) {
   .bigContainer header .nav .headerNav {
     display: none;
-  }
-}
-@media (width <= 700px) {
-  .bigContainer header .nav .headerNav {
-    display: none;
-  }
-}
-@media (width <= 500px) {
-  .bigContainer header .nav .headerNav {
-    display: none;
+    font-size: 1.3em;
   }
 }
 @media (width <= 1000px) {
@@ -270,14 +277,24 @@ img.fit {
     display: block;
   }
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   .bigContainer header .nav #menuIcon {
     display: block;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   .bigContainer header .nav #menuIcon {
-    display: block;
+    font-size: 1.6em;
+  }
+}
+@media (width <= 320px) {
+  .bigContainer header .nav #menuIcon {
+    font-size: 1.4em;
+  }
+}
+@media (width <= 320px) {
+  .bigContainer header .nav #menuIcon {
+    font-size: 1.3em;
   }
 }
 .bigContainer header .nav #menuIcon:hover {
@@ -300,10 +317,28 @@ img.fit {
     right: 130px;
   }
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   .bigContainer header .nav .navMenuContainer {
-    top: 75px;
-    right: 110px;
+    top: 65px;
+    right: 135px;
+  }
+}
+@media (width <= 425px) {
+  .bigContainer header .nav .navMenuContainer {
+    top: 65px;
+    right: 105px;
+  }
+}
+@media (width <= 375px) {
+  .bigContainer header .nav .navMenuContainer {
+    top: 65px;
+    right: 80px;
+  }
+}
+@media (width <= 320px) {
+  .bigContainer header .nav .navMenuContainer {
+    top: 60px;
+    right: 70px;
   }
 }
 .bigContainer header .nav .navMenuContainer.active {
@@ -312,6 +347,16 @@ img.fit {
 .bigContainer header .nav .navMenuContainer .headerNavMenu {
   font-size: 1.3em;
   padding: 10px 15px;
+}
+@media (width <= 425px) {
+  .bigContainer header .nav .navMenuContainer .headerNavMenu {
+    font-size: 1.1em;
+  }
+}
+@media (width <= 375px) {
+  .bigContainer header .nav .navMenuContainer .headerNavMenu {
+    font-size: 1em;
+  }
 }
 .bigContainer header .nav .navMenuContainer .headerNavMenu:hover {
   background: #da9000;
@@ -355,10 +400,35 @@ img.fit {
   align-items: center;
   gap: 20px;
 }
+@media (width <= 425px) {
+  .bigContainer header .navIcon {
+    gap: 15px;
+  }
+}
+@media (width <= 375px) {
+  .bigContainer header .navIcon {
+    gap: 10px;
+  }
+}
 .bigContainer header .navIcon i {
   font-size: 1.7em;
   transition: transform 0.3s ease;
   cursor: pointer;
+}
+@media (width <= 425px) {
+  .bigContainer header .navIcon i {
+    font-size: 1.5em;
+  }
+}
+@media (width <= 375px) {
+  .bigContainer header .navIcon i {
+    font-size: 1.3em;
+  }
+}
+@media (width <= 320px) {
+  .bigContainer header .navIcon i {
+    font-size: 1.2em;
+  }
 }
 .bigContainer header .navIcon i:hover {
   color: #2b2b2b;
@@ -379,22 +449,36 @@ img.fit {
   justify-content: center;
   align-items: center;
   padding: 30px 0;
+  text-align: center;
   gap: 5px;
   width: 100%;
+}
+@media (width <= 425px) {
+  .bigContainer footer .credits {
+    font-size: 0.9em;
+  }
+}
+@media (width <= 320px) {
+  .bigContainer footer .credits {
+    font-size: 0.8em;
+  }
 }
 .bigContainer footer hr {
   width: 50%;
 }
+@media (width <= 425px) {
+  .bigContainer footer hr {
+    width: 60%;
+  }
+}
+@media (width <= 320px) {
+  .bigContainer footer hr {
+    width: 65%;
+  }
+}
 .bigContainer footer .details {
   display: grid;
-  grid-template-columns: 65% 35%;
-  width: 100%;
-  padding: 30px 40px;
-}
-@media (width <= 1000px) {
-  .bigContainer footer .details {
-    grid-template-columns: 55% 45%;
-  }
+  grid-template-columns: 60% 40%;
 }
 @media (width <= 850px) {
   .bigContainer footer .details {
@@ -403,46 +487,68 @@ img.fit {
     gap: 50px;
   }
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   .bigContainer footer .details {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padidng: 20px 30px;
+    gap: 20px;
+    padding: 20px 30px;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   .bigContainer footer .details {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padidng: 20px 30px;
+    gap: 30px;
+  }
+}
+@media (width <= 375px) {
+  .bigContainer footer .details {
+    gap: 30px;
+    padding: 20px;
   }
 }
 .bigContainer footer .details .info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 80px;
 }
-@media (width <= 850px) {
+@media (width <= 1024px) {
   .bigContainer footer .details .info {
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+    margin-left: 60px;
   }
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   .bigContainer footer .details .info {
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-left: 0px;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   .bigContainer footer .details .info {
     align-items: center;
     flex-direction: column;
     gap: 0px;
+  }
+}
+@media (width <= 320px) {
+  .bigContainer footer .details .info {
+    gap: 0px;
+  }
+}
+.bigContainer footer .details .info a img {
+  object-fit: cover;
+}
+@media (2560px >= width > 1440px) {
+  .bigContainer footer .details .info a img {
+    width: 500px;
+  }
+}
+@media (width <= 320px) {
+  .bigContainer footer .details .info a img {
+    width: 200px;
   }
 }
 .bigContainer footer .details .info .text {
@@ -459,6 +565,11 @@ img.fit {
 .bigContainer footer .details .info .text p {
   font-size: 0.9em;
 }
+@media (width <= 425px) {
+  .bigContainer footer .details .info .text p {
+    text-align: center;
+  }
+}
 .bigContainer footer .details .info .text p a {
   font-weight: bold;
 }
@@ -466,28 +577,32 @@ img.fit {
   display: flex;
   gap: 50px;
 }
-@media (width <= 850px) {
-  .bigContainer footer .details .miniMenu {
-    justify-content: center;
-    gap: 100px;
-  }
-}
-@media (width <= 700px) {
+@media (width <= 768px) {
   .bigContainer footer .details .miniMenu {
     justify-content: center;
     gap: 50px;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   .bigContainer footer .details .miniMenu {
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
+  }
+}
+@media (width <= 375px) {
+  .bigContainer footer .details .miniMenu {
+    gap: 30px;
   }
 }
 .bigContainer footer .details .miniMenu .column {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+@media (width <= 425px) {
+  .bigContainer footer .details .miniMenu .column {
+    align-items: center;
+  }
 }
 .bigContainer footer .details .miniMenu .column h1 {
   font-family: "MGFont", sans-serif;
@@ -497,6 +612,18 @@ img.fit {
 .bigContainer footer .details .miniMenu .column a {
   font-size: 0.9em;
 }
+@media (width <= 425px) {
+  .bigContainer footer .details .miniMenu .column a {
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
+@media (width <= 320px) {
+  .bigContainer footer .details .miniMenu .column a {
+    font-size: 0.7em;
+    text-align: center;
+  }
+}
 
 main[of=home] {
   display: flex;
@@ -505,22 +632,18 @@ main[of=home] {
   padding-top: 0;
   gap: 50px;
 }
-@media (width <= 1000px) {
-  main[of=home] {
-    padding-top: 0;
-  }
-}
-@media (width <= 700px) {
+@media (width <= 1024px) {
   main[of=home] {
     padding: 50px 25px;
     padding-top: 0;
     gap: 30px;
   }
 }
-@media (width <= 500px) {
+@media (width <= 320px) {
   main[of=home] {
-    padding: 50px 25px;
+    padding: 50px 10px;
     padding-top: 0;
+    padding-bottom: 40px;
     gap: 30px;
   }
 }
@@ -536,7 +659,7 @@ main[of=home] .welcome img {
   height: 200px;
   filter: drop-shadow(0 0 10px rgba(5, 5, 5, 0.5));
 }
-@media (width <= 1000px) {
+@media (width <= 1024px) {
   main[of=home] .welcome img {
     width: 150px;
     height: 150px;
@@ -554,6 +677,12 @@ main[of=home] .welcome img {
     height: 120px;
   }
 }
+@media (width <= 320px) {
+  main[of=home] .welcome img {
+    width: 110px;
+    height: 110px;
+  }
+}
 main[of=home] .welcome .text {
   display: flex;
   flex-direction: column;
@@ -566,22 +695,37 @@ main[of=home] .welcome .text h1 {
   color: #fe2e2e;
   text-align: center;
 }
-@media (width <= 1000px) {
+@media (width <= 1024px) {
   main[of=home] .welcome .text h1 {
-    font-size: 5em;
+    font-size: 4.8em;
     margin: 10px 0 5px;
   }
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   main[of=home] .welcome .text h1 {
-    font-size: 4.5em;
+    font-size: 4.2em;
     margin: 10px 0 5px;
   }
 }
-@media (width <= 500px) {
+@media (width <= 768px) {
   main[of=home] .welcome .text h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     margin: 10px 0 5px;
+  }
+}
+@media (width <= 425px) {
+  main[of=home] .welcome .text h1 {
+    font-size: 3em;
+  }
+}
+@media (width <= 375px) {
+  main[of=home] .welcome .text h1 {
+    font-size: 2.8em;
+  }
+}
+@media (width <= 320px) {
+  main[of=home] .welcome .text h1 {
+    font-size: 2.3em;
   }
 }
 main[of=home] .welcome .text small {
@@ -590,22 +734,31 @@ main[of=home] .welcome .text small {
   text-align: center;
   width: 90%;
 }
-@media (width <= 1000px) {
+@media (width <= 1024px) {
   main[of=home] .welcome .text small {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-bottom: 20px;
   }
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   main[of=home] .welcome .text small {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-bottom: 20px;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   main[of=home] .welcome .text small {
-    font-size: 1.25em;
-    margin-bottom: 20px;
+    font-size: 1em;
+  }
+}
+@media (width <= 375px) {
+  main[of=home] .welcome .text small {
+    font-size: 0.9em;
+  }
+}
+@media (width <= 320px) {
+  main[of=home] .welcome .text small {
+    font-size: 0.8em;
   }
 }
 main[of=home] .welcome .text .link {
@@ -633,6 +786,12 @@ main[of=home] .welcome .text .link {
     font-size: 1.2em;
   }
 }
+@media (width <= 320px) {
+  main[of=home] .welcome .text .link {
+    font-size: 1.1em;
+    padding: 15px 20px;
+  }
+}
 main[of=home] .welcome .text .link:hover {
   background: #28be73;
 }
@@ -640,6 +799,11 @@ main[of=home] .info {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+@media (width <= 425px) {
+  main[of=home] .info {
+    gap: 30px;
+  }
 }
 main[of=home] .info .menu {
   display: flex;
@@ -676,9 +840,22 @@ main[of=home] .info .menu .menuItem {
     font-size: 1.2em;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   main[of=home] .info .menu .menuItem {
+    padding: 12px 25px;
     font-size: 1em;
+  }
+}
+@media (width <= 375px) {
+  main[of=home] .info .menu .menuItem {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}
+@media (width <= 320px) {
+  main[of=home] .info .menu .menuItem {
+    padding: 10px 20px;
+    font-size: 0.8em;
   }
 }
 main[of=home] .info .menu .menuItem.active {
@@ -718,19 +895,16 @@ main[of=home] .info .content:not(.contact) {
   display: flex;
   flex-direction: column;
 }
-@media (width <= 1000px) {
+@media (width <= 1024px) {
   main[of=home] .info .content:not(.contact) {
     gap: 50px;
+    padding: 0 30px;
   }
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   main[of=home] .info .content:not(.contact) {
     gap: 50px;
-  }
-}
-@media (width <= 500px) {
-  main[of=home] .info .content:not(.contact) {
-    gap: 50px;
+    padding: 0;
   }
 }
 main[of=home] .info .content:not(.contact) section {
@@ -738,17 +912,17 @@ main[of=home] .info .content:not(.contact) section {
   justify-content: space-between;
   align-items: center;
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   main[of=home] .info .content:not(.contact) section {
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 40px;
+    padding: 0 30px;
+    gap: 30px;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   main[of=home] .info .content:not(.contact) section {
     flex-direction: column;
     justify-content: center;
+    padding: 0 20px;
   }
 }
 main[of=home] .info .content:not(.contact) section:nth-child(2n) {
@@ -787,23 +961,21 @@ main[of=home] .info .content:not(.contact) section img {
   filter: drop-shadow(0 0 5px rgba(5, 5, 5, 0.5));
   transition: filter 0.5s ease;
 }
-@media (width <= 1000px) {
+@media (width <= 1024px) {
   main[of=home] .info .content:not(.contact) section img {
     width: 300px;
     height: 300px;
     object-fit: scale-down;
   }
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   main[of=home] .info .content:not(.contact) section img {
-    width: 200px;
-    height: 200px;
-    margin: 0;
-    object-fit: scale-down;
-    display: none;
+    width: 250px;
+    height: 250px;
+    object-fit: fill;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   main[of=home] .info .content:not(.contact) section img {
     width: 200px;
     height: 200px;
@@ -826,20 +998,18 @@ main[of=home] .info .content:not(.contact) section .container {
   padding: 40px 60px;
   border-radius: 0 20px 20px 0;
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   main[of=home] .info .content:not(.contact) section .container {
-    width: 90%;
+    width: 55%;
     text-align: center;
     padding: 20px 30px;
-    border-radius: 20px;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   main[of=home] .info .content:not(.contact) section .container {
-    width: 90%;
-    text-align: center;
-    padding: 20px 30px;
     border-radius: 20px;
+    width: 90%;
+    gap: 7.5px;
   }
 }
 main[of=home] .info .content:not(.contact) section .container h1 {
@@ -874,6 +1044,16 @@ main[of=home] .info .content:not(.contact) section .container p {
 @media (width <= 500px) {
   main[of=home] .info .content:not(.contact) section .container p {
     font-size: 1em;
+  }
+}
+@media (width <= 375px) {
+  main[of=home] .info .content:not(.contact) section .container p {
+    font-size: 0.9em;
+  }
+}
+@media (width <= 320px) {
+  main[of=home] .info .content:not(.contact) section .container p {
+    font-size: 0.8em;
   }
 }
 main[of=home] .info .content:not(.contact) section .container ul {
@@ -936,9 +1116,15 @@ main[of=home] .info .contact {
     padding: 0;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   main[of=home] .info .contact {
-    padding: 0;
+    padding: 0 30px;
+  }
+}
+@media (width <= 375px) {
+  main[of=home] .info .contact {
+    padding: 0 30px;
+    gap: 35px;
   }
 }
 main[of=home] .info .contact section {
@@ -967,29 +1153,40 @@ main[of=home] .info .contact section h1 {
   text-transform: uppercase;
   background: #fe2e2e;
   color: #ffffff;
+  text-align: center;
   padding: 10px 20px;
   border-radius: 8px;
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   main[of=home] .info .contact section h1 {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   main[of=home] .info .contact section h1 {
     font-size: 1.3em;
+  }
+}
+@media (width <= 375px) {
+  main[of=home] .info .contact section h1 {
+    font-size: 1.1em;
+  }
+}
+@media (width <= 320px) {
+  main[of=home] .info .contact section h1 {
+    font-size: 1em;
   }
 }
 main[of=home] .info .contact section .social {
   display: flex;
   flex-direction: row;
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   main[of=home] .info .contact section .social {
     gap: 30px;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   main[of=home] .info .contact section .social {
     gap: 20px;
   }
@@ -1004,9 +1201,24 @@ main[of=home] .info .contact section .social i {
   user-select: none;
   transition: color 0.3s ease, transform 0.3s ease;
 }
-@media (width <= 500px) {
+@media (width <= 768px) {
+  main[of=home] .info .contact section .social i {
+    font-size: 1.8em;
+  }
+}
+@media (width <= 425px) {
   main[of=home] .info .contact section .social i {
     font-size: 1.5em;
+  }
+}
+@media (width <= 320px) {
+  main[of=home] .info .contact section .social i {
+    font-size: 1.3em;
+  }
+}
+@media (width <= 320px) {
+  main[of=home] .info .contact section .social i {
+    font-size: 1.2em;
   }
 }
 main[of=home] .info .contact section .social i:hover {
@@ -1028,20 +1240,26 @@ main[of=home] .server h1 {
   font-size: 5em;
   font-family: "MGFont", sans-serif;
   font-weight: normal;
+  text-align: center;
 }
 @media (width <= 1000px) {
   main[of=home] .server h1 {
     font-size: 4em;
   }
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   main[of=home] .server h1 {
     font-size: 3.4em;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   main[of=home] .server h1 {
     font-size: 2.8em;
+  }
+}
+@media (width <= 320px) {
+  main[of=home] .server h1 {
+    font-size: 2.5em;
   }
 }
 main[of=home] .server a {
@@ -1064,7 +1282,7 @@ main[of=home] .server a {
     font-size: 2.5em;
   }
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   main[of=home] .server a {
     font-size: 2.2em;
   }
@@ -1072,6 +1290,11 @@ main[of=home] .server a {
 @media (width <= 500px) {
   main[of=home] .server a {
     font-size: 1.8em;
+  }
+}
+@media (width <= 320px) {
+  main[of=home] .server a {
+    font-size: 1.5em;
   }
 }
 main[of=home] .server a:hover {
@@ -1090,14 +1313,21 @@ main[of=home] .server small {
   font-size: 1.2em;
   opacity: 50%;
   transition: opacity 0.5s ease;
+  text-align: center;
 }
-@media (width <= 700px) {
+@media (width <= 768px) {
   main[of=home] .server small {
     font-size: 1.1em;
   }
 }
-@media (width <= 500px) {
+@media (width <= 425px) {
   main[of=home] .server small {
-    font-size: 1em;
+    font-size: 0.9em;
+  }
+}
+@media (width <= 320px) {
+  main[of=home] .server small {
+    font-size: 0.8em;
+    padding: 0 20px;
   }
 }
