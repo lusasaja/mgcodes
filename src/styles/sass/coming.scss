@@ -23,12 +23,30 @@ main[of='coming'] {
             & h1 {
                 font-size: 3.5em;
                 color: variables.$accent-200;
+                @media (width <= 768px) {
+                    font-size: 2.8em;
+                }
+                @media (width <= 425px) {
+                    font-size: 2.6em;
+                }
+                @media (width <= 375px) {
+                    font-size: 2.2em;
+                }
             }
     
             & small {
                 font-weight: normal;
                 font-size: 1.2em;
                 opacity: 50%;
+                text-align: center;
+                @media (width <= 425px) {
+                    font-size: 1.1em;
+                    width: 80%;
+                }
+                @media (width <= 375px) {
+                    font-size: 1em;
+                    width: 80%;
+                }
             }
         }
     
@@ -40,6 +58,9 @@ main[of='coming'] {
     
             & a {
                 font-size: 1.3em;
+                @media (width <= 375px) {
+                    font-size: 1em;
+                }
                 &.return {
                     background: variables.$accent-200;
                     padding: 10px 20px;
@@ -58,5 +79,13 @@ main[of='coming'] {
         width: 300px;
         height: 300px;
         object-fit: scale-down;
+        @media (width <= 1024px) {
+            height: 225px;
+            width: 225px;
+        }
+        @media (width <= 425px) {
+            width: 200px;
+            height: 200px;
+        }
     }
 }

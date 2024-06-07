@@ -50,6 +50,9 @@ main[of='collection'] {
                         font-size: 1.2em;
                         border-radius: 12px 0 0 12px;
                         width: 250px;
+                        @media (width <= 375px) {
+                            width: 200px;
+                        }
                     }
                     & button {
                         background: variables.$accent-200;
@@ -126,6 +129,12 @@ main[of='collection'] {
                     @media (width <= 500px) {
                         font-size: 1em;
                     }
+                    @media (width <= 375px) {
+                        font-size: 0.9em;
+                    }
+                    @media (width <= 320px) {
+                        font-size: 0.8em;
+                    }
                     &:hover {
                         background: darken(variables.$accent-300, 2.5%);
                     }
@@ -147,9 +156,9 @@ main[of='collection'] {
             grid-template-columns: repeat(4,1fr);
             place-items: center;
             gap: 30px;
-            @media (width <= 1000px) {
+            @media (width <= 1024px) {
                 grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
+                gap: 40px;
             }
             @media (width <= 700px) {
                 grid-template-columns: repeat(2, 1fr);
@@ -157,6 +166,9 @@ main[of='collection'] {
             @media (width <= 500px) {
                 gap: 20px;
                 grid-template-columns: repeat(2, 1fr);
+            }
+            @media (width <= 375px) {
+                grid-template-columns: 1fr;
             }
 
             & .item {
@@ -175,6 +187,12 @@ main[of='collection'] {
                 @media (width <= 700px) {
                     padding: 10px 15px;
                 }
+                @media (width <= 375px) {
+                    padding: 30px 30px;
+                }
+                @media (width <= 320px) {
+                    padding: 20px 30px;
+                }
                 &:hover {
                     transform: scale(1.1);
                 }
@@ -191,6 +209,12 @@ main[of='collection'] {
                     }
                     @media (width <= 500px) {
                         font-size: 1.2em;
+                    }
+                    @media (width <= 375px) {
+                        font-size: 1.6em;
+                    }
+                    @media (width <= 320px) {
+                        font-size: 1.4em;
                     }
                 }
 
@@ -209,6 +233,14 @@ main[of='collection'] {
                     @media (width <= 500px) {
                         width: 100px;
                         height: 100px;
+                    }
+                    @media (width <= 375px) {
+                        width: 140px;
+                        height: 140px;
+                    }
+                    @media (width <= 320px) {
+                        width: 120px;
+                        height: 120px;
                     }
                 }
 
@@ -239,8 +271,11 @@ main[of='collection'] {
         justify-content: center;
         align-items: center;
         gap: 20px;
+        @media (width <= 425px) {
+            flex-direction: column;
+        }
 
-        & .numberButtons {
+        & section {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -259,6 +294,9 @@ main[of='collection'] {
             @media (width <= 500px) {
                 font-size: 0.8em;
             }
+            @media (width <= 425px) {
+                font-size: 0.9em;
+            }
             &:hover {
                 background: darken(variables.$accent-200, 5%)
             }
@@ -271,7 +309,10 @@ main[of='collection'] {
         display: flex;
         justify-content: center;
         align-items: center;
-        @media (width <= 500px) {
+        @media (width <= 425px) {
+            font-size: 1em;
+        }
+        @media (width <= 320px) {
             font-size: 0.9em;
         }
     }

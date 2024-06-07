@@ -35,8 +35,10 @@ export default function Controls({currentPage, fillGallery, groupedPrizes, total
 
     return (
         <section class="controls">
-            <button id="start" onClick={handleStart}>Inicio</button>
-            <button id="prev" onClick={handlePrev}><i class="bx bx-left-arrow"></i></button>
+            <section>
+                <button id="start" onClick={handleStart}>Inicio</button>
+                <button id="prev" onClick={handlePrev}><i class="bx bxs-left-arrow"></i></button>
+            </section>
             <section class="numberButtons">
                 {generatePageNumbers().map(page => (
                     <button key={page} onClick={() => handlePageClick(page)} className='numberButton'>
@@ -44,8 +46,10 @@ export default function Controls({currentPage, fillGallery, groupedPrizes, total
                     </button>
                 ))}
             </section>
-            <button id="next" onClick={handleNext}><i class="bx bx-right-arrow"></i></button>
-            <button id="end" onClick={handleEnd}>Final</button>
+            <section>
+                <button id="next" onClick={handleNext}><i class="bx bxs-right-arrow"></i></button>
+                <button id="end" onClick={handleEnd}>Final</button>
+            </section>
         </section>
     ) 
 }
