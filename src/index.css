@@ -124,6 +124,83 @@ img.fit {
   background-clip: text;
   color: transparent;
 }
+.bigContainer.dark main[of=collection] .filterContainer .group search .search input {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: transparent;
+  color: #ffffff;
+}
+.bigContainer.dark main[of=collection] .filterContainer .group search .search button {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  color: #606060;
+}
+.bigContainer.dark main[of=collection] .filterContainer .group .filter select {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: transparent;
+  color: #ffffff;
+}
+.bigContainer.dark main[of=collection] .filterContainer .group .filter select option {
+  background: #121212;
+  color: #ffffff;
+}
+.bigContainer.dark main[of=collection] .filterContainer .tags .container .tag {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  color: #121212;
+}
+.bigContainer.dark main[of=collection] .gallery .container .item {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: transparent;
+}
+.bigContainer.dark main[of=collection] .gallery .container .item .status {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  color: #121212;
+}
+.bigContainer.dark main[of=collection] .controls button {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  color: #121212;
+}
+.bigContainer.dark main[of=coming] .info .alert h1 {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bigContainer.dark main[of=coming] .nav a.return {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bigContainer.dark main[of=coming] .nav a.return:hover {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bigContainer.dark main[of=notFound] .info .alert h1 {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bigContainer.dark main[of=notFound] .nav a.return {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bigContainer.dark main[of=notFound] .nav a.return:hover {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .bigContainer.dark footer {
   background: #0f0f0f;
 }
@@ -297,6 +374,11 @@ img.fit {
     font-size: 1.3em;
   }
 }
+@media (width <= 320px) {
+  .bigContainer header .nav #menuIcon {
+    font-size: 1.1em;
+  }
+}
 .bigContainer header .nav #menuIcon:hover {
   color: #2b2b2b;
   transform: scale(1.1);
@@ -430,6 +512,11 @@ img.fit {
     font-size: 1.2em;
   }
 }
+@media (width <= 300px) {
+  .bigContainer header .navIcon i {
+    font-size: 1em;
+  }
+}
 .bigContainer header .navIcon i:hover {
   color: #2b2b2b;
   transform: scale(1.1);
@@ -478,14 +565,9 @@ img.fit {
 }
 .bigContainer footer .details {
   display: grid;
-  grid-template-columns: 60% 40%;
-}
-@media (width <= 850px) {
-  .bigContainer footer .details {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
+  grid-template-columns: 65% 35%;
+  width: 100%;
+  padding: 20px 30px;
 }
 @media (width <= 768px) {
   .bigContainer footer .details {
@@ -510,12 +592,6 @@ img.fit {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 80px;
-}
-@media (width <= 1024px) {
-  .bigContainer footer .details .info {
-    margin-left: 60px;
-  }
 }
 @media (width <= 768px) {
   .bigContainer footer .details .info {

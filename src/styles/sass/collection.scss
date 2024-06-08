@@ -1,6 +1,7 @@
 @use 'reset';
 @use 'variables';
 @use 'structure';
+@use 'dark';
 
 main[of='collection'] {
     display: flex;

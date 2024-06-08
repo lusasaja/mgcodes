@@ -141,6 +141,9 @@
                 @media (width <= 320px) {
                     font-size: 1.3em;
                 }
+                @media (width <= 320px) {
+                    font-size: 1.1em;
+                }
                 &:hover {
                     color: lighten(variables.$black, 15%);
                     transform: scale(1.1);
@@ -247,6 +250,9 @@
                 }
                 @media (width <= 320px) {
                     font-size: 1.2em;
+                }
+                @media (width <= 300px) {
+                    font-size: 1em;
                 }
                 &:hover {
                     color: lighten(variables.$black, 15%);

@@ -145,6 +145,134 @@
                 }
             }
         }
+
+        &[of='collection'] {
+            & .filterContainer {
+                & .group {
+                    & search {
+                        & .search {
+                            & input {
+                                border: 3px solid;
+                                border-image: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary) 1;
+                                background: transparent;
+                                color: variables.$white;
+                            }
+                            & button {
+                                background: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary);
+                                color: variables.$hard-light;
+                            }
+                        }
+                    }
+                    & .filter {
+                        & select {
+                            border: 3px solid;
+                            border-image: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary) 1;
+                            background: transparent;
+                            color: variables.$white;
+                            & option {
+                                background: variables.$soft-dark;
+                                color: variables.$white;
+                            }
+                        }
+                    }
+                }
+
+                & .tags {
+                    & .container {
+                        & .tag {
+                            background: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary);
+                            color: variables.$soft-dark;
+                        }
+                    }
+                }
+            }
+
+            & .gallery {
+                & .container {
+                    & .item {
+                        border: 3px solid;
+                        border-image: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary) 1;
+                        background: transparent;
+
+                        & .status {
+                            background: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary);
+                            color: variables.$soft-dark;
+                        }
+                    }
+                }
+            }
+
+            & .controls {
+                & button {
+                    background: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary);
+                    color: variables.$soft-dark;
+                }
+            }
+        }
+
+        &[of='coming'] {
+            & .info {
+                & .alert {
+                    & h1 {
+                        background: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                    }
+                }
+            }
+
+            & .nav {
+                & a {
+                    &.return {
+                        border: 3px solid;
+                        border-image: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary) 1;
+                        background: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                        &:hover {
+                            background: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+        &[of='notFound'] {
+            & .info {
+                & .alert {
+                    & h1 {
+                        background: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                    }
+                }
+            }
+
+            & .nav {
+                & a {
+                    &.return {
+                        border: 3px solid;
+                        border-image: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary) 1;
+                        background: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                        &:hover {
+                            background: linear-gradient(135deg, variables.$secondary, lighten(variables.$secondary, 10%), variables.$secondary);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            color: transparent;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     & footer {

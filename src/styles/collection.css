@@ -124,6 +124,43 @@ img.fit {
   background-clip: text;
   color: transparent;
 }
+.bigContainer.dark main[of=collection] .filterContainer .group search .search input {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: transparent;
+  color: #ffffff;
+}
+.bigContainer.dark main[of=collection] .filterContainer .group search .search button {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  color: #606060;
+}
+.bigContainer.dark main[of=collection] .filterContainer .group .filter select {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: transparent;
+  color: #ffffff;
+}
+.bigContainer.dark main[of=collection] .filterContainer .group .filter select option {
+  background: #121212;
+  color: #ffffff;
+}
+.bigContainer.dark main[of=collection] .filterContainer .tags .container .tag {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  color: #121212;
+}
+.bigContainer.dark main[of=collection] .gallery .container .item {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: transparent;
+}
+.bigContainer.dark main[of=collection] .gallery .container .item .status {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  color: #121212;
+}
+.bigContainer.dark main[of=collection] .controls button {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  color: #121212;
+}
 .bigContainer.dark footer {
   background: #0f0f0f;
 }

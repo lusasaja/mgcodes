@@ -5,7 +5,7 @@ import '../styles/notFound.css'
 
 export default function NotFoundPage({darkMode, setDarkMode}) {
     return (
-        <div className="bigContainer">
+        <div className={`bigContainer ${darkMode ? 'dark' : ''}`}>
             <Header darkMode={darkMode} setDarkMode={setDarkMode}></Header>
             <main of='notFound' className={darkMode ? 'dark' : ''}>
                 <section className="info">

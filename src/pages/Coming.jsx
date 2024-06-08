@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom"
 
 export default function NotFoundPage({darkMode, setDarkMode}) {
     return (
-        <div className="bigContainer">
+        <div className={`bigContainer ${darkMode ? 'dark' : ''}`}>
             <Header darkMode={darkMode} setDarkMode={setDarkMode}></Header>
             <main of='coming' className={darkMode ? 'dark' : ''}>
                 <section className="info">

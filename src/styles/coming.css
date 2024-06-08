@@ -29,6 +29,162 @@ img.fit {
   src: url("/src/assets/fonts/Aleo/Aleo-Italic-VariableFont_wght.ttf");
   font-style: italic;
 }
+.bigContainer.dark {
+  background: #121212;
+  color: #ffffff;
+}
+.bigContainer.dark header {
+  background: #121212;
+  border-bottom: 3px solid #606060;
+}
+.bigContainer.dark header .logo {
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.35));
+}
+.bigContainer.dark header .nav .headerNav.resalted {
+  border-bottom: 3px solid #f3a100;
+}
+.bigContainer.dark header .nav .headerNav:hover {
+  border-bottom: 3px solid #f3a100;
+  color: #cccccc;
+}
+.bigContainer.dark header .nav #menuIcon:hover {
+  color: #cccccc;
+}
+.bigContainer.dark header .nav .navMenuContainer {
+  background: #121212;
+  border: 3px solid #3a3a3a;
+}
+.bigContainer.dark header .nav .navMenuContainer .headerNavMenu:hover {
+  background: #535353;
+}
+.bigContainer.dark header .nav .navMenuContainer .headerNavMenu.resalted {
+  background: #535353;
+}
+.bigContainer.dark header .navIcon i:hover {
+  color: #cccccc;
+}
+.bigContainer.dark main[of=home] .welcome img {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.35));
+}
+.bigContainer.dark main[of=home] .welcome .text h1 {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bigContainer.dark main[of=home] .welcome .text .link {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: transform 0.3s ease;
+}
+.bigContainer.dark main[of=home] .welcome .text .link:hover {
+  transform: scale(1.1);
+  animation: gradientMove 1s forwards;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: -200% 50%;
+  }
+}
+.bigContainer.dark main[of=home] .info .menu .menuItem {
+  background: #2d2d2d;
+}
+.bigContainer.dark main[of=home] .info .menu .menuItem.active {
+  background: #da9000;
+}
+.bigContainer.dark main[of=home] .info .menu .menuItem:hover {
+  background: #da9000;
+}
+.bigContainer.dark main[of=home] .info .content:not(.contact) section img {
+  filter: drop-shadow(0 0 2.5px rgba(255, 255, 255, 0.35));
+}
+.bigContainer.dark main[of=home] .info .content:not(.contact) section img:hover {
+  filter: none;
+}
+.bigContainer.dark main[of=home] .info .content:not(.contact) section .container {
+  background: #2d2d2d;
+}
+.bigContainer.dark main[of=home] .info .contact section h1 {
+  background: #2d2d2d;
+}
+.bigContainer.dark main[of=home] .info .contact section .social i {
+  background: #1f1f1f;
+}
+.bigContainer.dark main[of=home] .server h1 {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bigContainer.dark main[of=collection] .filterContainer .group search .search input {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: transparent;
+  color: #ffffff;
+}
+.bigContainer.dark main[of=collection] .filterContainer .group search .search button {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  color: #606060;
+}
+.bigContainer.dark main[of=collection] .filterContainer .group .filter select {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: transparent;
+  color: #ffffff;
+}
+.bigContainer.dark main[of=collection] .filterContainer .group .filter select option {
+  background: #121212;
+  color: #ffffff;
+}
+.bigContainer.dark main[of=collection] .filterContainer .tags .container .tag {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  color: #121212;
+}
+.bigContainer.dark main[of=collection] .gallery .container .item {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: transparent;
+}
+.bigContainer.dark main[of=collection] .gallery .container .item .status {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  color: #121212;
+}
+.bigContainer.dark main[of=collection] .controls button {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  color: #121212;
+}
+.bigContainer.dark main[of=coming] .info .alert h1 {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bigContainer.dark main[of=coming] .nav a.return {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #f3a100, #ffb627, #f3a100) 1;
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bigContainer.dark main[of=coming] .nav a.return:hover {
+  background: linear-gradient(135deg, #f3a100, #ffb627, #f3a100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bigContainer.dark footer {
+  background: #0f0f0f;
+}
+
 main[of=coming] {
   display: flex;
   flex-direction: column;

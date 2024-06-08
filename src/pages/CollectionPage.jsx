@@ -88,7 +88,7 @@ export default function CollectionPage({darkMode, setDarkMode}) {
     const tags = ['funciona', 'no funciona', 'verano', 'invierno', 'navidad', 'halloween'];
 
     return (
-        <div className='bigContainer'>
+        <div className={`bigContainer ${darkMode ? 'dark' : ''}`}>
             <Header darkMode={darkMode} setDarkMode={setDarkMode}></Header>
             <main of='collection' className={darkMode ? 'dark' : ''}>
                 <FilterOptions prizes={prizes} searchTerm={searchTerm} handleSearchChange={handleSearchChange} categories={categories} selectedCategory={selectedCategory} handleCategoryChange={handleCategoryChange} tags={tags} handleTagClick={handleTagClick} setFilter={setFilter} activeTags={activeTags}></FilterOptions>

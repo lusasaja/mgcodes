@@ -3,7 +3,7 @@ import Footer from "../components/Footer"
 import { useNavigate } from "react-router-dom"
 import { useEffect } from "react"
 
-export default function ExtrasPage() {
+export default function ExtrasPage({darkMode, setDarkMode}) {
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -11,7 +11,7 @@ export default function ExtrasPage() {
     }, [navigate])
 
     return (
-        <div className="bigContainer">
+        <div className='bigContainer'>
             <Header />
             <main>Extras</main>
             <Footer />
