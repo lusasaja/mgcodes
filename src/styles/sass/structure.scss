@@ -258,6 +258,10 @@
                     color: lighten(variables.$black, 15%);
                     transform: scale(1.1);
                 }
+                &#cogIcon {
+                    opacity: 50%;
+                    cursor: not-allowed;
+                }
             } 
         }
     }

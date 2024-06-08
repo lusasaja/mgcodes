@@ -521,6 +521,10 @@ img.fit {
   color: #2b2b2b;
   transform: scale(1.1);
 }
+.bigContainer header .navIcon i#cogIcon {
+  opacity: 50%;
+  cursor: not-allowed;
+}
 .bigContainer main {
   min-height: 85vh;
 }
